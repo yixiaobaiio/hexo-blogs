@@ -134,9 +134,16 @@ music:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-    type: git
+  - type: git
     repository:
       github: git@github.com:longbig/longbig.github.io.git
       coding: git@github.com:longbig/hexo-blogs.git
     branch: master
+  - type: baidu_url_submitter
 
+#百度普通收录 https://ziyuan.baidu.com/linksubmit/index
+baidu_url_submit:
+  count: 100
+  host: https://longbig.github.io
+  token: U2BLcATEA2kjRXVz
+  path: baidu_urls.txt
