@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 龙哥的博客
 subtitle: ''
-description: ''
+description: '武汉大学 | 程序猿'
 keywords:
-author: John Doe
-language: en
+author: longbig
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://longbig.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -105,5 +105,5 @@ deploy:
     type: git
     repository:
       github: git@github.com:longbig/longbig.github.io.git
-      coding: git@github.com:longbig/hexo-matery-modified.git
+      coding: git@github.com:longbig/hexo-blogs.git
     branch: master
