@@ -4,7 +4,7 @@
 
 # Site
 title: 龙哥的博客
-subtitle: ''
+subtitle: '龙哥的博客'
 description: '武汉大学 | 程序猿'
 keywords:
 author: longbig
@@ -119,9 +119,9 @@ music:
   title:     	    # 非吸底模式有效
     enable: true
     show: QQ音乐
-  server: tencent   # require music platform: netease, tencent, kugou, xiami, baidu
+  server: netease   # require music platform: netease, tencent, kugou, xiami, baidu
   type: song    # require song, playlist, album, search, artist
-  id: 230154448     # require song id / playlist id / album id / search keyword
+  id: 30285885     # require song id / playlist id / album id / search keyword
   fixed: false      # 开启吸底模式
   autoplay: true   # 是否自动播放
   theme: '#42b983'
