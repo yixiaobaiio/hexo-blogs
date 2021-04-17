@@ -3,6 +3,7 @@ title: mysql索引基础
 date: 2021-04-17 21:05:25
 type: "_posts"
 layout: "posts"
+img: "https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg"
 ---
 
 ## 索引常见模型
