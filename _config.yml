@@ -145,5 +145,5 @@ deploy:
 baidu_url_submit:
   count: 100
   host: https://longbig.github.io
-  token: U2BLcATEA2kjRXVz
+  token: mAWsJzBQAspeyyEO
   path: baidu_urls.txt
