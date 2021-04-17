@@ -1,3 +1,10 @@
+---
+title: mysql索引基础
+date: 2021-04-17 21:05:25
+type: "_posts"
+layout: "posts"
+---
+
 ## 索引常见模型
 
 ### 三种数据结构
