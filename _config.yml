@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 龙哥的博客
-subtitle: '龙哥的博客'
-description: '武汉大学 | 程序猿'
+title: yixiaobai的博客
+subtitle: 'yixiaobai的博客'
+description: '大学 | 程序猿'
 keywords:
-author: longbig
+author: yixiaobai
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://longbig.github.io/
+url: https://yixiaobaiio.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -136,14 +136,14 @@ music:
 deploy:
   - type: git
     repository:
-      github: git@github.com:longbig/longbig.github.io.git
-      coding: git@github.com:longbig/hexo-blogs.git
+      github: git@github.com:yixiaobaiio/yixiaobaiio.github.io.git
+      coding: git@github.com:yixiaobaiio/hexo-blogs.git
     branch: master
   - type: baidu_url_submitter
 
 #百度普通收录 https://ziyuan.baidu.com/linksubmit/index
 baidu_url_submit:
   count: 100
-  host: https://longbig.github.io
+  host: https://yixiaobaiio.github.io
   token: mAWsJzBQAspeyyEO
   path: baidu_urls.txt
