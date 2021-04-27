@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="软件测试理论基础, 翼小白的博客">
+    <meta name="keywords" content="翼小白的博客">
     <meta name="description" content="大学 | 程序猿">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>软件测试理论基础 | 翼小白的博客</title>
+    <title>翼小白的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">软件测试理论基础</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-24
+                    2021-04-27
                 </div>
                 
 
@@ -467,94 +467,379 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>01什么是软件测试？软件测试的目的与原则是什么？</strong></p>
-<p>在<strong>规定的条件下对程序进行操作</strong>，以发现<strong>程序错误</strong>，<strong>衡量软件质量</strong>，并对其是否能<strong>满足设计要求进行评估</strong>的过程。</p>
-<p><strong>1）软件测试的目的：</strong></p>
-<ul>
-<li>想<strong>以最少的人力、物力和时间找出软件中潜在的各种错误和缺陷</strong>，通过<strong>修正各种错误和缺陷提高软件质量</strong>，回避软件发布后由于<strong>潜在的软件缺陷和错误造成的隐患</strong>所带来的商业风险</li>
-<li>测试是以<strong>评价一个程序或者系统属性</strong>为目标的活动，测试是对<strong>软件质量的度量与评估</strong>，以<strong>验证软件的质量满足用户的需求的程度</strong>，为用户选择与接受软件提供有力的依据</li>
-<li>通过分析错误产生的原因还可以<strong>帮助发现当前开发工作所采用的软件过程的缺陷，以便进行软件过程改进</strong>。同时，通过对测试结果的分析整理，还可以修正软件开发规则，并为软件可靠性分析提供了依据通过最终的验收测试，也可以<strong>证明软件满足了用户的需求，树立人们使用软件的信心。</strong></li>
-</ul>
-<p><strong>2）软件测试的原则：</strong></p>
-<ul>
-<li>所有的软件测试都应<strong>追溯到用户需求</strong></li>
-<li>应当把“<strong>尽早地和不断地进行软件测试</strong>”作为软件测试者的座右铭</li>
-<li>完全测试是不可能的，<strong>测试需要终止</strong></li>
-<li>测试<strong>无法显示软件潜在的缺陷</strong></li>
-<li>充分注意测试中的<strong>群集现象</strong></li>
-<li><strong>程序员应避免检查自己的程序</strong></li>
-<li><strong>尽量避免测试的随意性</strong></li>
-</ul>
-<p><strong>02目前主要的测试用例设计方法是什么？</strong></p>
-<p><strong>1）白盒测试</strong>：逻辑覆盖、循环覆盖、基本路径覆盖。</p>
-<p><strong>2）黑盒测试</strong>：边界值分析法、等价类划分、错误猜测法、因果图法、状态图法、测试大纲法、随机测试、场景法。</p>
-<p><strong>03</strong>什么是<strong>测试用例</strong>? 什么是<strong>测试脚本</strong>? 两者的关系是什么？</p>
-<p><strong>1）测试用例</strong>：为实施测试而向<strong>被测试系统提供的输入数据、操作或各种环境设置以及期望结果的一个特定的集合。</strong></p>
-<p><strong>2）测试脚本</strong>：为了进行<strong>自动化测试而编写的脚本</strong>。</p>
-<p><strong>3）关系</strong>：<strong>测试脚本的编写必须对应相应的测试用例</strong>。</p>
-<p><strong>04简述什么是静态测试、动态测试、黑盒测试、白盒测试、α测试、β测试</strong></p>
-<p><strong>1）静态测试</strong>是不运行程序本身而寻找程序代码中可能存在的错误或评估程序代码的过程。  </p>
-<p><strong>2）动态测试</strong>是实际运行被测程序，输入相应的测试实例，检查运行结果与预期结果的差异，判定执行结果是否符合要求，从而检验程序的正确性、可靠性和有效性，并分析系统运行效率和健壮性等性能。</p>
-<p><strong>3）黑盒测试</strong>一般用来<strong>确认软件功能的正确性和可操作性</strong>，目的是检测软件的各个功能是否能得以实现，把被测试的程序当作一个黑盒，不考虑其内部结构，在知道该程序的输入和输出之间的关系或程序功能的情况下，依靠软件规格说明书来确定测试用例和推断测试结果的正确性。</p>
-<p><strong>4）白盒测试</strong>根据<strong>软件内部的逻辑结构分析来进行测试</strong>，是基于代码的测试，测试人员通过阅读程序代码或者通过使用开发工具中的单步调试来判断软件的质量，一般黑盒测试由项目经理在程序员开发中来实现。</p>
-<p><strong>5）α测试</strong>是由一个用户在<strong>开发环境</strong>下进行的测试，也可以是公司内部的用户在模拟实际操作环境下进行的受控测试，α测试不能由程序员或测试员完成。</p>
-<p><strong>6）β测试</strong>是软件的多个用户在一个或多个用户的<strong>实际使用环境</strong>下进行的测试。开发者通常不在测试现场，β测试不能由程序员或测试员完成。</p>
-<p><strong>05软件测试的策略是什么？</strong></p>
-<p><strong>软件测试策略</strong>：在一定的软件测试标准、测试规范的指导下，依据测试项目的特定环境约束而规定的软件测试的原则、方式、方法的集合。</p>
-<p><strong>06软件测试各个阶段通常完成什么工作？各个阶段的结果文件是什么？包括什么内容？</strong></p>
-<p><strong>1）单元测试阶段</strong>：各独立单元模块在与系统的其他部分相隔离的情况下进行测试，单元测试针对每一个程序模块进行正确性校验，检查各个程序模块是否正确地实现了规定的功能。生成单元测试报告，提交缺陷报告。</p>
-<p><strong>2）集成测试阶段</strong>：集成测试是在单元测试的基础上，测试在将所有的软件单元按照概要设计规格说明的要求组装成模块、子系统或系统的过程中各部分工作是否达到或实现相应技术指标及要求的活动。该阶段生成集成测试报告，提交缺陷报告。</p>
-<p><strong>3）系统测试阶段</strong>：将通过确认测试的软件，作为整个给予计算机系统的一个元素，与计算机硬件、外设、某些支持软件、数据和人员等其他系统元素结合在一起，在实际运行环境下，对计算机系统进行全面的功能覆盖。该阶段需要提交测试总结和缺陷报告。</p>
-<p><strong>07测试人员在软件开发过程中的任务是什么？</strong></p>
-<ul>
-<li>尽可能早的找出系统中的Bug</li>
-<li>避免软件开发过程中缺陷的出现</li>
-<li>衡量软件的品质，保证系统的质量</li>
-<li>关注用户的需求，并保证系统符合用户需求</li>
-</ul>
-<p><strong>总的目标是</strong>：确保软件的质量。</p>
-<p><strong>08黑盒测试的测试用例常见设计方法都有哪些？请分别以具体的例子来说明</strong></p>
-<p><strong>1）等价类划分</strong>：等价类是指某个输入域的子集合。在该子集合中，各个输入数据对于揭露程序中的错误都是等效的。并合理地假定：测试某等价类的代表值就等于对这一类其它值的测试。因此，可以把全部输入数据合理划分为若干等价类，在每一个等价类中取一个数据作为测试的输入条件，就可以用少量代表性的测试数据。取得较好的测试结果。等价类划分可有两种不同的情况：有效等价类和无效等价类。</p>
-<p><strong>2）边界值分析法</strong>：是对等价类划分方法的补充。测试工作经验告诉我，大量的错误是发生在输入或输出范围的边界上，而不是发生在输入输出范围的内部。因此针对各种边界情况设计测试用例，可以查出更多的错误。</p>
-<p>使用边界值分析方法设计测试用例，首先应确定边界情况。通常输入和输出等价类的边界，就是应着重测试的边界情况。应当选取正好等于，刚刚大于或刚刚小于边界的值作为测试数据，而不是选取等价类中的典型值或任意值作为测试数据。</p>
-<p><strong>3）错误猜测法</strong>：基于经验和直觉推测程序中所有可能存在的各种错误，从而有针对性的设计测试用例的方法。</p>
-<p>错误推测方法的基本思想：列举出程序中所有可能有的错误和容易发生错误的特殊情况，根据他们选择测试用例。例如，在单元测试时曾列出的许多在模块中常见的错误。以前产品测试中曾经发现的错误等，这些就是经验的总结。还有输入数据和输出数据为0的情况。输入表格为空格或输入表格只有一行。这些都是容易发生错误的情况。可选择这些情况下的例子作为测试用例。</p>
-<p><strong>4）因果图方法</strong>：前面介绍的等价类划分方法和边界值分析方法，都是着重考虑输入条件，但未考虑输入条件之间的联系，相互组合等。考虑输入条件之间的相互组合，可能会产生一些新的情况。但要检查输入条件的组合不是一件容易的事情，即使把所有输入条件划分成等价类，他们之间的组合情况也相当多。因此必须考虑采用一种适合于描述对于多种条件的组合，相应产生多个动作的形式来考虑设计测试用例。这就需要利用因果图（逻辑模型）。因果图方法最终生成的就是判定表。它适合于检查程序输入条件的各种组合情况。</p>
-<p><strong>5）正交表分析法</strong>：可能因为大量的参数的组合而引起测试用例数量上的激增，同时，这些测试用例并没有明显的优先级上的差距，而测试人员又无法完成这么多数量的测试，就可以通过正交表来进行缩减一些用例，从而达到尽量少的用例覆盖尽量大的范围的可能性。</p>
-<p><strong>6）场景分析方法</strong>：指根据用户场景来模拟用户的操作步骤，这个比较类似因果图，但是可能执行的深度和可行性更好。 </p>
-<p><strong>7）状态图法</strong>：通过输入条件和系统需求说明得到被测系统的所有状态，通过输入条件和状态得出输出条件；通过输入条件、输出条件和状态得出被测系统的测试用例。</p>
-<p><strong>8）大纲法</strong>：大纲法是一种着眼于需求的方法，为了列出各种测试条件，就将需求转换为大纲的形式。大纲表示为树状结构，在根和每个叶子结点之间存在唯一的路径。大纲中的每条路径定义了一个特定的输入条件集合，用于定义测试用例。树中叶子的数目或大纲中的路径给出了测试所有功能所需测试用例的大致数量。</p>
-<p><strong>09软件测试项目从什么时候开始？为什么？</strong> </p>
-<p>软件测试应该在需求分析阶段就介入，因为测试的对象不仅仅是程序编码，应该对软件开发过程中产生的所有产品都测试，并且软件缺陷存在放大趋势，缺陷发现的越晚，修复它所花费的成本就越大。</p>
-<p><strong>10</strong></p>
-<p>什么是回归测试？</p>
-<p>回归测试：回归测试有两类，用例回归和错误回归；用例回归是过一段时间以后再回头对以前使用过的用例在重新进行测试，看看会重新发现问题。错误回归，就是在新版本中，对以前版本中出现并修复的缺陷进行再次验证，并以缺陷为核心，对相关修改的部分进行测试的方法。</p>
-<p><strong>11你认为做好测试计划工作的关键是什么？</strong></p>
-<p><strong>1）明确测试的目标，增强测试计划的实用性。</strong></p>
-<p>编写软件测试计划的重要目的就是使测试过程能够发现更多的软件缺陷，因此软件测试计划的价值取决于它对帮助管理测试项目，并且找出软件潜在的缺陷。因此，软件测试计划中的测试范围必须高度覆盖功能需求，测试方法必须切实可行，测试工具并且具有较高的实用性，便于使用，生成的测试结果直观、准确。</p>
-<p><strong>2）坚持“5W1H”规则，明确内容与过程。</strong></p>
-<p>“5W1H”规则指的是“What（做什么）”、“Why（为什么做）”、“When（何时做）”、“Where（在哪里）”、“who（谁来做）”、“How（如何做）”。利用“5W1H”规则创建软件测试计划，可以帮助测试团队理解测试的目的（Why），明确测试的范围和内容（What），确定测试的开始和结束日期（When），确定项目有关人员（who），给出测试文档和软件的存放位置（Where）、指出测试的方法和工具（How）。</p>
-<p><strong>3）采用评审和更新机制，保证测试计划满足实际需求。</strong></p>
-<p>测试计划写作完成后，如果没有经过评审，直接发送给测试团队，测试计划内容的可能不准确或遗漏测试内容，或者软件需求变更引起测试范围的增减，而测试计划的内容没有及时更新，误导测试执行人员。</p>
-<p><strong>4）分别创建测试计划与测试详细规格、测试用例。</strong></p>
-<p>应把详细的测试技术指标包含到独立创建的测试详细规格文档，把用于指导测试小组执行测试过程的测试用例放到独立创建的测试用例文档或测试用例管理数据库中。测试计划和测试详细规格、测试用例之间是战略和战术的关系，测试计划主要从宏观上规划测试活动的范围、方法和资源配置，而测试详细规格、测试用例是完成测试任务的具体战术。</p>
-<p><strong>12一份测试计划应该包括哪些内容？</strong></p>
-<p>背景、项目简介、目的、测试范围、测试策略、人员分工、资源要求、进度计划、参考文档、常用术语、提交文档、风险分析。 </p>
-<p><strong>13缺陷记录应包含的内容？</strong></p>
-<p>缺陷标识、缺陷类型、缺陷严重程度、缺陷产生可能性、缺陷优先级、缺陷状态、缺陷起源、缺陷来源、缺陷原因。</p>
-<p><strong>14测试结束的标准是什么？</strong></p>
-<p>当这个软件彻底的消失以后，测试就结束了。</p>
-<p><strong>15一个测试工程师应具备哪些素质？</strong></p>
-<ul>
-<li>责任心</li>
-<li>沟通能力</li>
-<li>团队合作精神</li>
-<li>耐心、细心、信心</li>
-<li>时时保持怀疑态度，并且有缺陷预防的意识</li>
-<li>具备一定的编程经验</li>
-</ul>
-<p><strong>16你的测试职业发展目标是什么？</strong></p>
-<p>我的职业发展：需要时间累积，一步步向着高级测试工程师的目标前进。前2年累积测试经验，不断的更新、改正自己，做好测试任务。</p>
+                <h1 id="软件测试基础"><a href="#软件测试基础" class="headerlink" title="软件测试基础"></a>软件测试基础</h1><p>来自B站浪晋的测试小讲堂萌芽计划笔记</p>
+<h2 id="day-1-软件测试的介绍和分类"><a href="#day-1-软件测试的介绍和分类" class="headerlink" title="day 1   软件测试的介绍和分类"></a>day 1   软件测试的介绍和分类</h2><p>测试的定义、测试的分类、测试的方法、测试的生命周期。</p>
+<p>软件测试：就是检查实际结果和预期结果是否一致。检查软件开发中存在的问题缺陷。保证软件质量符合客户需求的一系列手段。</p>
+<p><strong>软件测试的职业规划</strong></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\1.png"></p>
+<p> <strong>软件测试分类</strong></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\3.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">软件测试的分类：
+
+按方法划分：
+
+	黑盒测试：将软件看作是一个不能打开的黑盒子，来测试其功能实现。
+
+	白盒测试：知道软件的内部结构，了解软件的内部逻辑进行测试。
+
+	灰盒测试：介于黑盒和白盒之间。
+
+按方向划分：
+
+	功能测试：测试软件的功能实现是否符合用户需求，功能是否存在缺陷。
+
+	性能测试：
+			压力测试：测试软件的性能瓶颈，即软件最大的承受能力。
+			负载测试：测试软件最大负荷情况下正常持续工作的时间，能力。
+			并发测试：测试软件同时处理多个请求的能力。
+
+	安全测试：是否存在漏洞，容易被黑客攻击。
+
+黑盒测试不是功能测试，它们的分类方式不同。黑盒测试是进行功能测试的一种方法。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\4.png"></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\5.png"></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\6.png"></p>
+<p>软件公司研发团队的结构</p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\7.png"></p>
+<p><strong>功能点的划分流程</strong>：从大到小划分功能点。</p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\13.png"></p>
+<p><strong>职业规划</strong>(具体学习时间安排、职业发展规划)</p>
+<pre class="line-numbers language-none"><code class="language-none">学习安排
+1、2021.1 - 2021.3 学习java基础、软件测试基础知识并做好笔记
+2、2021.4 - 2021.7 学习javaWeb知识、测试工具的使用
+职业规划
+入职一年做好功能测试，并坚持写博客，学习总结
+2-3年 自动化测试工程师
+3-5年性能测试工程师<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="day-2-软件研发模型和测试流程"><a href="#day-2-软件研发模型和测试流程" class="headerlink" title="day 2  软件研发模型和测试流程"></a>day 2  软件研发模型和测试流程</h2><p>软件研发管理模型</p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\11.png"></p>
+<p><strong>瀑布流</strong></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\8.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">特点：从上往下，每个步骤都是相互独立的，不可逆转。不变通，效率低。（流程的基础）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>V字型</strong></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\9.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">特点：测试和开发的工作一一对照，还是一个从上往下的过程。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>W字型</strong></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\10.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">特点：左侧的V是开发的工作，右侧V是测试的工作，开发和测试的工作可同步进行。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>敏捷模型</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">特点：没有具体的模型，高效的工作，及时的沟通，日报，白板，站立会!<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>测试流程</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">测试流程：需求分析阶段 ---&gt;测试设计阶段 ---&gt; 测试执行阶段 ---&gt; 测试总结阶段
+具体每个阶段的工作：
+需求分析阶段：
+    1、进行需求分析：需求分析、产品说明书、口述（方式） 
+    2、学习业务流程（了解项目软件使用的专业知识）
+    3、提取功能点（从大到小划分功能，直到划分到最小功能点，思维导图或excel表）
+    4、编写需求分析说明书
+  注意：没有需求怎么办？参考市面上同类型的成熟软件的实现（参考其实现的规则）
+ 测试设计阶段（文档阶段）：主要编写文档，测试计划、测试方案、测试策略、测试用例。
+ 养成优秀测试的能力：测试、文档、编程
+ 编写文档的方法：5W1H方法
+ 测试计划说明书（测试计划、测试策略、测试方案）
+ 测试计划的重点：时间、人员和资源的安排及分配
+ 测试方案的重点：针对每个测试的内容如何开展测试、采用什么测试计划？使用什么测试工具
+ 测试策略的重点：哪些内容先测试、哪些内容后测试、测试开始和结束的标准是什么
+ 测试执行阶段：
+ 测试总结阶段：
+    
+        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\14.png"></p>
+<h2 id="day-3-测试用例的编写和bug管理"><a href="#day-3-测试用例的编写和bug管理" class="headerlink" title="day 3  测试用例的编写和bug管理"></a>day 3  测试用例的编写和bug管理</h2><p>测试用例为测试人员工作提供一个测试工作依据。</p>
+<p>测试用例根据软件需求说明书进行编写，其执行的多少可估计为软件测试的覆盖率，测试用例覆盖到需求说明书中所有的软件功能，可以说测试用例覆盖率为100%。</p>
+<p>测试方法：等价类、边界值、场景法（三个重要的）、因果图、判定表、路径覆盖、、、、</p>
+<pre class="line-numbers language-none"><code class="language-none">等价类：分为无效等价类和有效等价类（即有效值和无效值）
+边界值：
+场景法：以微信发红包为例，用户的使用场景有发送成功和发送失败两种场景。
+发送成功：用户输入符合要求的数额，发送成功
+发送失败：用户什么都不输入发送失败；输入超出范围的数额发送失败；用户发送非数字的值，发送失败。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">测试用例要素：
+测试用例编号（唯一的）
+测试用例名称（言简意赅，用最少的字描述清楚测试用例的功能）
+前置条件（执行该测试用例之前必须满足的条件）
+优先级（执行该用例的时间要求紧急级别）
+重要级（这个被测的功能在系统里面的重要级别）
+测试数据
+测试步骤
+预期结果
+实际结果
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>测试用例编写练习</strong></p>
+<p><img src="D:\workspace_IDEA\hexo-blogs\source\img\3-16.png"></p>
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>用例名称</th>
+<th>前置条件</th>
+<th>优先级</th>
+<th>重要级</th>
+<th>测试数据</th>
+<th>测试步骤</th>
+<th>预期结果</th>
+<th>实际结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>注册功能</td>
+<td></td>
+<td></td>
+<td></td>
+<td>账号：a11111 密码：abc12345 昵称：翼小白</td>
+<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
+<td>注册成功</td>
+<td>注册成功</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>账号：a11111 222222密码：abc12345 昵称：翼小白</td>
+<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
+<td>注册成功</td>
+<td>注册成功</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>账号：11111 222222/*&amp;asd12密码：abc12345 昵称：翼小白</td>
+<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
+<td>注册失败，提示账号格式不正确</td>
+<td>注册失败，提示账号格式不正确</td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>账号：aa11111 222222/aa112密码：abc12345 昵称：翼小白</td>
+<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
+<td>注册失败，提示账号长度不正确</td>
+<td>注册失败，提示账号长度不正确</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>账号：a11111 222222密码：abcdefgf/12345678/*&amp;^#1234昵称：翼小白</td>
+<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
+<td>注册失败，提示密码格式不正确</td>
+<td>注册失败，提示密码格式不正确</td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>账号：a11111222222密码：abc12345 确认密码：acc12345 昵称：翼小白</td>
+<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
+<td>注册失败，提示确认密码和输入密码不一致</td>
+<td>注册失败，提示确认密码和输入密码不一致</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>账号：a11111222222密码：abc12345 确认密码：abc12345 昵称：翼小白12</td>
+<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
+<td>注册失败，提示昵称格式不正确</td>
+<td>注册失败，提示昵称格式不正确</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-none"><code class="language-none">测试的一些常识：
+1、测试是无穷无尽的
+2、
+评审：
+同行评审、小组评审、部门评审、项目评审、第三方评审、邮件评审<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>测试执行阶段：如果预期结果和实际结果一致，则测试通过；若不一致，则提交bug。测试执行阶段主要的工作就是提交bug和回归测试。</p>
+<pre class="line-numbers language-none"><code class="language-none">bug的管理：
+bug的管理平台&#x2F;系统&#x2F;工具
+	禅道、BUGFree、ALM&#x2F;QC、testlink、Bugzilla、JIRA等。
+
+bug生命周期
+	
+bug六要素
+	编号、BUG的名称、BUG的优先级（高、中、低）、BUG的严重级别（致命的：影响软件核心功能的正常使用；软件闪退、崩溃；和钱有关。严重的：导致功能无法正常使用；一般的：功能的某些场景异常有问题；轻微的：建议性、UI、用户体验方面的问题。）、BUG复现步骤（用例步骤+实际结果+预期结果）、附件（附件的作用佐证bug存在，可用截图、日志、视频等）
+
+bug的状态
+	新建&#x2F;new、打开&#x2F;激活&#x2F;open、已确认、已解决、拒绝、重新打开&#x2F;reopen、关闭&#x2F;closed、延期处理、重复BUG
+
+回归测试：在版本2中检查版本1中发现的问题是否被修复解决。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">版本迭代：随着时间&#x2F;测试次数的推进会发布很多版本，其中版本号是不断叠加的。
+增量测试：只测试已知的有变化的部分
+全量测试：测试软件的所有功能<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="day-4-测试应用和测试报告"><a href="#day-4-测试应用和测试报告" class="headerlink" title="day 4  测试应用和测试报告"></a>day 4  测试应用和测试报告</h2><pre class="line-numbers language-none"><code class="language-none">测试应用：APP测试、WEB测试
+软件结构：B&#x2F;S （browser&#x2F;server  浏览器和服务器）   C&#x2F;S（client&#x2F;server  客户端和服务器）
+B&#x2F;S和C&#x2F;S的区别：
+浏览器不需要安装，版本更新时，只需要服务器更新，访问网页可以访问最新版本。
+客户端，版本更新时客户端和服务器都要更新。
+APP测试比WEB测试更加复杂，APP测试需要测试（APP专项测试）
+（1 安装、卸载；
+ (2 消息推送、
+ (3 更新、
+ (4 弱网测试（2G&#x2F;3G&#x2F;4G&#x2F;5G&#x2F;WIFI等、
+ (5 场景交互测试（来电话、听音乐、调用相机、前后台的切换）、
+ (6 权限测试
+（7 离线测试 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">测试总结阶段要编写测试报告
+测试报告（核心包含）：对工作的总结、对BUG的统计分析、对被测软件的评估
+
+bug的统计分析：可以根据不同的属性对bug进行统计分析；如根据测试、开发、软件模块、bug等级、解决时间、软件版本、bug状态等
+
+对被测软件质量的评估
+	一二级的bug全部关闭
+	三级的bug关闭80%+
+	四级的bug修不修改无所谓
+当软件的质量达到以上标准就认为软件已达到验收标准<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>测试计划、测试方案、测试策略、测试用例的编写。<br> BUG的定义、BUG的分类、BUG的六要素、BUG的生命周期。<br> 测试和开发流程的关系、瀑布流、V字形、W字型（双V）、螺旋型、敏捷等等。<br> 戴明环、5W2H等分析管理的方法<br> 质量管理体系CMMI（了解）</p>
+<h1 id="接口测试相关（公众号）"><a href="#接口测试相关（公众号）" class="headerlink" title="接口测试相关（公众号）"></a>接口测试相关（公众号）</h1><p>——阿里技术《如何编写有效的接口测试》</p>
+<p><strong>接口测试的好处</strong></p>
+<p>有效且覆盖完整的接口测试，能够保障新功能的开发质量；让开发在修改功能逻辑的时候有回归的能力；也是能优雅地进行重构的前提。</p>
+<pre class="line-numbers language-none"><code class="language-none">测试能够保障代码的开发质量，新功能测试可以保障新功能逻辑正确；回归测试保障原有业务功能逻辑正确；
+测试的方式：人工测试和自动化测试
+自动化测试的特点：可持续、可重复、甚至可AI化。
+
+注：易测性也是代码结构合理的一个指标。
+
+测试的分层从大到小：
+全链路测试---&gt;域链路测试（架构域A）---&gt;(系统)接口测试---&gt;模块测试---&gt;单元测试
+
+单元测试：对单个类或单个方法的测试。当是一个工具或一段比较内聚又复杂的逻辑（如算法逻辑），应使用单元测试来保障逻辑的正确性。
+
+模块测试：系统比较大，模块比较多的情况下可以建立模块测试层，保障各模块功能的正确性。当前系统的发展趋势是微服务架构，模块测试非十分必要，可通过接口测试层来覆盖。
+
+接口测试：从系统入口出发进行集成测试。（入口测试）应用入口通常是HSF（一个分布式RPC服务框架）服务，消息，定时任务。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>接口测试要遵循的原则</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">测试的原则
+
+基础原则：
+（1）自动化：接口测试是非交互式的自动化执行，不需要人参与
+（2）独立性：接口测试之间不应该相互依赖
+（3）可重复：接口测试可重复执行，不受环境影响
+（4）接口测试遵循BCDE原则，保障接口的交付质量。
+	Border：边界测试
+	Correct：正确的输入，正确的预期输出
+	Design：按照需求和设计文档编写测试逻辑
+	Error：错误输入，预期输出
+（5）数据准备：数据准备通过系统服务进行，不能通过直接插入db方式（插入数据库）
+（6）可测性：对于不可测的代码需要进行重构成合理的结构
+（7）覆盖性：接口测试需要覆盖所有的UC，同时代码覆盖率和分支覆盖率应达到一定标准，新增代码必须被覆盖
+（8）持续性：如果代码修改导致已有接口测试执行失败，必须修复代码问题或者测试代码逻辑
+（9）时间要求：接口测试应该在项目发布之前完成，不应该放到项目发布之后补充
+
+以上基本原则应适用于所有层的自动化测试用例，在编写接口测试时，除了以上原则，还有其它原则需要遵守
+
+有效接口测试的关键原则是要覆盖所有入口；mock所有依赖；校验执行过程中所留下的痕迹。
+
+（1）入口覆盖：接口测试用例必须覆盖HSF服务入口、消息入口、定时任务入口。
+（2）依赖mock：接口测试不能受环境依赖，需要mock掉对外依赖。但对于db依赖，不建议完全mock掉，一方面mock的成本高，另外可能覆盖不到sql和表约束逻辑。
+（3）校验完整：有效接口测试应具备完整的校验，没有校验的接口测试是没有意义的。执行过程中留下的的痕迹对业务有影响，都要进行完整校验，方能保障接口测试的有效性。
+	HSF接口返回值校验：按照场景和接口约定进行HSF返回参数校验
+	DB校验：校验落地数据的正确性
+	缓存校验：校验存入缓存中数据的正确性
+	HSF依赖入参校验：通过mock工具获得依赖HSF调用的入参，进行入参校验。
+	消息校验：通过mock工具获得发送的消息对象，进行消息体校验。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>测试代码的结构</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">1、和业务代码一样，考虑可读、可拓展、可复用性。
+2、可根据系统的业务特性，在测试框架的基础上封装适合当前系统的测试组件，提高测试代码编写效率，规范测试代码结构。
+
+接口的测试代码结构：
+
+1、测试准备
+
+依赖数据准备
+	配置数据：可通过定义配置文件来初始化配置
+	业务数据：这里数据，禁止通过直接插入数据方式产生，而应通过调用业务服务产生。
+	
+依赖mock
+	对于外部依赖，需要对被依赖的服务进行mock，避免真实调用
+	
+接口测试入参准备
+	准备接口方面的入参。
+	
+2、测试执行
+
+调用接口方法，执行业务逻辑。
+
+3、测试校验
+
+	返回参数校验：检验接口的返回参数
+	DB：校验DB落地数据
+	缓存数据校验：校验落地到缓存中的数据
+	消息校验：校验对外发送的消息对象
+	对外HSF调用校验：校验对外HSF调用的入参。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>接口测试的实践技巧</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">1、执行效率（需要关注的点）
+
+提高测试执行效率的建议方案：
+
+（1）最小化启动测试上下文，例如spring boot的应用，启动spring就可以了
+（2）使用内存数据库，例如h2
+（3）将中间件依赖mock掉
+
+2、测试框架选择
+
+建议选择基于testng，能够提供通过配置文件做数据准备的测试框架。如果找不到合适的，可以自己基于testng进行封装。
+
+3、接口测试覆盖度
+
+（1）基于业务场景和测试经验枚举出正常和异常情况
+（2）一些固定需要测试的点：幂等测试、边界值测试、参数不正确测试等等。
+
+同时，要通过覆盖率工具查看接口未覆盖的代码或分支逻辑，进行针对性的场景覆盖测试。分支完整性覆盖非常重要，特别是异常的分支。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="51Testing"><a href="#51Testing" class="headerlink" title="51Testing"></a>51Testing</h1><h2 id="如何编写好一条测试用例"><a href="#如何编写好一条测试用例" class="headerlink" title="如何编写好一条测试用例"></a>如何编写好一条测试用例</h2><p>1、编写测试用例的时间：需求评审、技术方案确定后，提测之前</p>
+<p>2、测试用例的好处：</p>
+<pre class="line-numbers language-none"><code class="language-none">1、任何测试人员都可以执行
+2、减少不必要的沟通成本，节省实际执行时间
+3、尽可能减少重复劳动
+4、归档（为后续的迭代、回归、回溯或交接等提供清晰的依据以及指导。）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3、测试用例必要字段</p>
+<pre class="line-numbers language-none"><code class="language-none">1、用例名称：简洁且完整的说明该条用例的作用
+2、前置条件：执行用例需要做哪些前置步骤
+3、用例步骤或输入步骤（执行用例的每步操作）
+4、预期结果（明确、清晰、完整的描写相关的检查点，确保能明确判断用例是否通过）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>4、测试用例的扩展字段</p>
+<pre class="line-numbers language-none"><code class="language-none">1、用例编号：用例ID，一般命名方式为：需求编号+功能模块代号+测试类别+编号
+2、优先级：用例执行的优先级，一般将开发提测前自测的用例设置为最高级，一般为正常功能、主流程用例
+3、使用平台：测试平台，如安卓、iOS、PC、MAC等
+4、是否自动化
+5、关联需求：关联至该需求，便于回溯
+6、是否通过
+7、网络：测试环境的网络情况及相关参数
+8、备注：注明该用例需要注意的事项<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -581,7 +866,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yixiaobaiio.github.io/2021/04/24/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/">https://yixiaobaiio.github.io/2021/04/24/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/</a>
+                    <a href="https://yixiaobaiio.github.io/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">https://yixiaobaiio.github.io/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -786,9 +1071,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
@@ -806,9 +1092,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -817,6 +1103,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -827,13 +1114,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/24/hello-world/">
+                <a href="/2021/04/24/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
+                        <img src="https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg" class="responsive-img" alt="软件测试理论基础">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">软件测试理论基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
