@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="软件测试基础, 翼小白的博客">
+    <meta name="keywords" content="如何写好测试用例, 翼小白的博客">
     <meta name="description" content="大学 | 程序猿">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>软件测试基础 | 翼小白的博客</title>
+    <title>如何写好测试用例 | 翼小白的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">软件测试基础</h1>
+                    <h1 class="description center-align post-title">如何写好测试用例</h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-27
+                    2021-04-29
                 </div>
                 
 
@@ -467,377 +467,528 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="软件测试基础"><a href="#软件测试基础" class="headerlink" title="软件测试基础"></a>软件测试基础</h1><p>来自B站浪晋的测试小讲堂萌芽计划笔记</p>
-<h2 id="day-1-软件测试的介绍和分类"><a href="#day-1-软件测试的介绍和分类" class="headerlink" title="day 1   软件测试的介绍和分类"></a>day 1   软件测试的介绍和分类</h2><p>测试的定义、测试的分类、测试的方法、测试的生命周期。</p>
-<p>软件测试：就是检查实际结果和预期结果是否一致。检查软件开发中存在的问题缺陷。保证软件质量符合客户需求的一系列手段。</p>
-<p><strong>软件测试的职业规划</strong></p>
-<p><img src="https://raw.githubusercontent.com/yixiaobaiio/yixiaobaiio.github.io/master/img/1.png"></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/3.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">软件测试的分类：
+                <h1 id="如何写好测试用例教程"><a href="#如何写好测试用例教程" class="headerlink" title="如何写好测试用例教程"></a>如何写好测试用例教程</h1><p>—浪晋慕课网视频教程笔记</p>
+<h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><p>软件相关概念       软件测试基础      测试流程     测试生命周期</p>
+<h2 id="测试常用术语"><a href="#测试常用术语" class="headerlink" title="测试常用术语"></a>测试常用术语</h2><p>方法：黑盒   灰盒    白盒</p>
+<p>方向：功能   性能    安全</p>
+<p>测试点：兼容性   易用性   UI元素</p>
+<h2 id="测试用例是什么"><a href="#测试用例是什么" class="headerlink" title="测试用例是什么"></a>测试用例是什么</h2><pre class="line-numbers language-none"><code class="language-none">1、测试用例是测试工作的核心
 
-按方法划分：
+2、一组在测试时输入输出的标准
 
-	黑盒测试：将软件看作是一个不能打开的黑盒子，来测试其功能实现。
+3、软件需求的具体对照<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-	白盒测试：知道软件的内部结构，了解软件的内部逻辑进行测试。
+<h2 id="测试用例的作用"><a href="#测试用例的作用" class="headerlink" title="测试用例的作用"></a>测试用例的作用</h2><pre class="line-numbers language-none"><code class="language-none">1、检验软件是否满足客户需求
+2、体现一个测试人员的工作量
+3、展现测试用例的设计思路<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-	灰盒测试：介于黑盒和白盒之间。
-
-按方向划分：
-
-	功能测试：测试软件的功能实现是否符合用户需求，功能是否存在缺陷。
-
-	性能测试：
-			压力测试：测试软件的性能瓶颈，即软件最大的承受能力。
-			负载测试：测试软件最大负荷情况下正常持续工作的时间，能力。
-			并发测试：测试软件同时处理多个请求的能力。
-
-	安全测试：是否存在漏洞，容易被黑客攻击。
-
-黑盒测试不是功能测试，它们的分类方式不同。黑盒测试是进行功能测试的一种方法。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/4.png?raw=true"></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/5.png?raw=true"></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/6.png?raw=true"></p>
-<p>软件公司研发团队的结构</p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/7.png?raw=true"></p>
-<p><strong>功能点的划分流程</strong>：从大到小划分功能点。</p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/13.png?raw=true"></p>
-<p><strong>职业规划</strong>(具体学习时间安排、职业发展规划)</p>
-<pre class="line-numbers language-none"><code class="language-none">学习安排
-1、2021.1 - 2021.3 学习java基础、软件测试基础知识并做好笔记
-2、2021.4 - 2021.7 学习javaWeb知识、测试工具的使用
-职业规划
-入职一年做好功能测试，并坚持写博客，学习总结
-2-3年 自动化测试工程师
-3-5年性能测试工程师<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="day-2-软件研发模型和测试流程"><a href="#day-2-软件研发模型和测试流程" class="headerlink" title="day 2  软件研发模型和测试流程"></a>day 2  软件研发模型和测试流程</h2><p>软件研发管理模型</p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/11.png?raw=true"></p>
-<p><strong>瀑布流</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/8.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：从上往下，每个步骤都是相互独立的，不可逆转。不变通，效率低。（流程的基础）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>V字型</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/9.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：测试和开发的工作一一对照，还是一个从上往下的过程。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>W字型</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/10.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：左侧的V是开发的工作，右侧V是测试的工作，开发和测试的工作可同步进行。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>敏捷模型</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：没有具体的模型，高效的工作，及时的沟通，日报，白板，站立会!<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>测试流程</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">测试流程：需求分析阶段 ---&gt;测试设计阶段 ---&gt; 测试执行阶段 ---&gt; 测试总结阶段
-具体每个阶段的工作：
-需求分析阶段：
-    1、进行需求分析：需求分析、产品说明书、口述（方式） 
-    2、学习业务流程（了解项目软件使用的专业知识）
-    3、提取功能点（从大到小划分功能，直到划分到最小功能点，思维导图或excel表）
-    4、编写需求分析说明书
-  注意：没有需求怎么办？参考市面上同类型的成熟软件的实现（参考其实现的规则）
- 测试设计阶段（文档阶段）：主要编写文档，测试计划、测试方案、测试策略、测试用例。
- 养成优秀测试的能力：测试、文档、编程
- 编写文档的方法：5W1H方法
- 测试计划说明书（测试计划、测试策略、测试方案）
- 测试计划的重点：时间、人员和资源的安排及分配
- 测试方案的重点：针对每个测试的内容如何开展测试、采用什么测试计划？使用什么测试工具
- 测试策略的重点：哪些内容先测试、哪些内容后测试、测试开始和结束的标准是什么
- 测试执行阶段：
- 测试总结阶段：
-    
-        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/14.png?raw=true"></p>
-<h2 id="day-3-测试用例的编写和bug管理"><a href="#day-3-测试用例的编写和bug管理" class="headerlink" title="day 3  测试用例的编写和bug管理"></a>day 3  测试用例的编写和bug管理</h2><p>测试用例为测试人员工作提供一个测试工作依据。</p>
-<p>测试用例根据软件需求说明书进行编写，其执行的多少可估计为软件测试的覆盖率，测试用例覆盖到需求说明书中所有的软件功能，可以说测试用例覆盖率为100%。</p>
-<p>测试方法：等价类、边界值、场景法（三个重要的）、因果图、判定表、路径覆盖、、、、</p>
-<pre class="line-numbers language-none"><code class="language-none">等价类：分为无效等价类和有效等价类（即有效值和无效值）
-边界值：
-场景法：以微信发红包为例，用户的使用场景有发送成功和发送失败两种场景。
-发送成功：用户输入符合要求的数额，发送成功
-发送失败：用户什么都不输入发送失败；输入超出范围的数额发送失败；用户发送非数字的值，发送失败。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">测试用例要素：
-测试用例编号（唯一的）
-测试用例名称（言简意赅，用最少的字描述清楚测试用例的功能）
-前置条件（执行该测试用例之前必须满足的条件）
-优先级（执行该用例的时间要求紧急级别）
-重要级（这个被测的功能在系统里面的重要级别）
+<h2 id="测试用例包含的内容"><a href="#测试用例包含的内容" class="headerlink" title="测试用例包含的内容"></a>测试用例包含的内容</h2><pre class="line-numbers language-none"><code class="language-none">用例编号：编号唯一
+用例名称：言简意赅
+测试背景：说明用例属于某个项目，且测试哪些东西
+前置条件：执行这条用例之前需要满足哪些条件 
+优先级
+重要级   
 测试数据
-测试步骤
-预期结果
-实际结果
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+测试步骤：操作步骤   
+预期结果：功能实现的结果  
+实际结果：测试用例执行的结果 
+备注：其它一些信息描述<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><strong>测试用例编写练习</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/3-16.png?raw=true"></p>
+<h2 id="测试用例的编写流程"><a href="#测试用例的编写流程" class="headerlink" title="测试用例的编写流程"></a>测试用例的编写流程</h2><pre class="line-numbers language-none"><code class="language-none">需求分析----&gt;提取测试点----&gt;测试用例编写----&gt;测试用例评审<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="需求分析和测试点编写"><a href="#需求分析和测试点编写" class="headerlink" title="需求分析和测试点编写"></a>需求分析和测试点编写</h2><pre class="line-numbers language-none"><code class="language-none">需求分析
+业务需求：关注系统是否满足业务
+用户需求：关注系统是否满足用户习惯
+功能需求：关注系统是否满足功能需求
+
+如果没有需求怎么办？
+参考市面上已经上线的同类产品
+
+需求模糊怎么办？
+1、收集整理已有需求和产品经理逐条确认
+2、参考市面上已经上线的同类产品的实现情况<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="提取测试点"><a href="#提取测试点" class="headerlink" title="提取测试点"></a>提取测试点</h2><pre class="line-numbers language-none"><code class="language-none">1、什么是测试点？
+测试点即通过需求分析后对得出的需要进行测试的具体内容
+
+2、测试点对测试用例有什么好处？
+（1）快速   ---根据测试点可以快速设计出测试用例
+（2）覆盖   ---测试点能够完全覆盖需求
+（3）方法   ---在测试点上能够迅速运用测试方法
+（4）细节   ---测试点能够展现出需求的一些细节
+
+3、如何提取测试点？
+举例-以慕课网为例
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<table>
+<thead>
+<tr>
+<th>功能模块</th>
+<th>测试点编号</th>
+<th>测试点描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>注册功能</td>
+<td>1</td>
+<td>点击注册按钮显示注册对话框</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>对输入的邮箱和手机号进行验证是否可用</td>
+</tr>
+<tr>
+<td></td>
+<td>3</td>
+<td>判断验证码是否输入正确</td>
+</tr>
+<tr>
+<td></td>
+<td>4</td>
+<td>点击注册跳转首页</td>
+</tr>
+<tr>
+<td>登录功能</td>
+<td>1</td>
+<td>正常登录</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>判断输入的邮箱和手机号是否符合规范</td>
+</tr>
+<tr>
+<td></td>
+<td>3</td>
+<td>账号为空时点击登录</td>
+</tr>
+<tr>
+<td></td>
+<td>4</td>
+<td>账号错误时点击登录</td>
+</tr>
+<tr>
+<td></td>
+<td>5</td>
+<td>密码为空时点击登录</td>
+</tr>
+<tr>
+<td></td>
+<td>6</td>
+<td>密码错误时点击登录</td>
+</tr>
+<tr>
+<td></td>
+<td>7</td>
+<td>账号密码都为空时点击登录</td>
+</tr>
+<tr>
+<td></td>
+<td>8</td>
+<td>自动登录功能是否有效</td>
+</tr>
+<tr>
+<td></td>
+<td>9</td>
+<td>点击忘记密码跳转至找回密码界面</td>
+</tr>
+<tr>
+<td></td>
+<td>10</td>
+<td>使用QQ登录</td>
+</tr>
+<tr>
+<td></td>
+<td>11</td>
+<td>使用微信登陆</td>
+</tr>
+<tr>
+<td></td>
+<td>12</td>
+<td>使用微博登录</td>
+</tr>
+<tr>
+<td></td>
+<td>13</td>
+<td>使用慕课网APP扫描二维码登录</td>
+</tr>
+<tr>
+<td>搜索功能</td>
+<td>1</td>
+<td>输入任意信息点击搜索跳转至搜索结果页面</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>在搜索结果页面输入任意信息可以进行全站搜索</td>
+</tr>
+<tr>
+<td></td>
+<td>3</td>
+<td>可以筛选搜索结果</td>
+</tr>
+<tr>
+<td></td>
+<td>4</td>
+<td>可以点击热门搜索进行快捷操作</td>
+</tr>
+<tr>
+<td></td>
+<td>5</td>
+<td>点击搜索结果可以跳转至对应界面</td>
+</tr>
+<tr>
+<td></td>
+<td>6</td>
+<td>搜索完成后显示搜到的结果数目</td>
+</tr>
+<tr>
+<td>下载APP功能</td>
+<td>1</td>
+<td>鼠标移动至相应图标位置出现扫描下载二维码</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>扫描二维码跳转至下载页面</td>
+</tr>
+</tbody></table>
+<h2 id="测试用例编写注意事项"><a href="#测试用例编写注意事项" class="headerlink" title="测试用例编写注意事项"></a>测试用例编写注意事项</h2><pre class="line-numbers language-none"><code class="language-none">1、根据项目的实际情况设计测试用例表格
+2、用例格式不是固定的，切忌生搬硬套
+3、根据具体的情况编写<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="测试用例编写方法（常用）"><a href="#测试用例编写方法（常用）" class="headerlink" title="测试用例编写方法（常用）"></a>测试用例编写方法（常用）</h2><pre class="line-numbers language-none"><code class="language-none">等价类划分法
+有效等价类   无效等价类
+如何选择适当的数据子集，来代表整个数据集。
+作用：通过降低测试的数目来实现“合理的”覆盖，覆盖了更多的可能数据，以发现更多的软件缺陷。
+
+边界值分析法
+作为等价类划分法的补充，将测试的边界情况作为重点目标。选取正好等于、刚刚大于或刚刚小于边界值的测试数据
+
+场景法
+通过运用场景来对系统的功能点或业务流程描述，从而提高测试效果。
+场景法一般包含基本流和备用流，从一个流程开始，通过描述经过的路径来确定的过程，经过遍历所有的基本流和备用流来完成整个场景。
+
+错误猜测法
+需要有丰富的测试经验。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="测试用例的编写"><a href="#测试用例的编写" class="headerlink" title="测试用例的编写"></a>测试用例的编写</h2><p>根据功能点编写测试用例</p>
+<p>1、慕课网注册功能测试用例编写</p>
+<pre class="line-numbers language-none"><code class="language-none">注册功能 
+1  点击注册按钮显示注册对话框   
+2  对输入的邮箱和手机号进行验证是否可用    
+3  判断验证码是否输入正确    
+4  点击注册跳转首页(跳转在手机注册和邮箱注册都有验证，不需单独设计用例验证)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <table>
 <thead>
 <tr>
 <th>用例编号</th>
 <th>用例名称</th>
+<th>测试背景</th>
 <th>前置条件</th>
-<th>优先级</th>
 <th>重要级</th>
+<th>优先级</th>
 <th>测试数据</th>
 <th>测试步骤</th>
 <th>预期结果</th>
 <th>实际结果</th>
+<th>编写人</th>
+<th>执行人</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>1</td>
-<td>注册功能</td>
+<td>点击注册按钮弹出注册对话框</td>
+<td>该功能已经完善</td>
+<td>该功能已经开发完成，并通过了开发自验证</td>
+<td>高</td>
+<td>高</td>
+<td></td>
+<td>1、进入慕课网   2、点击注册按钮</td>
+<td>弹出注册对话框</td>
 <td></td>
 <td></td>
 <td></td>
-<td>账号：a11111 密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
-<td>注册成功</td>
-<td>注册成功</td>
 </tr>
 <tr>
 <td>2</td>
+<td>使用邮箱注册成功</td>
+<td>该功能已经完善</td>
+<td>输入的账号未注册</td>
+<td>高</td>
+<td>高</td>
+<td>账号：<a href="mailto:&#121;&#x69;&#x78;&#105;&#97;&#111;&#98;&#x61;&#105;&#49;&#x32;&#51;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">&#121;&#x69;&#x78;&#105;&#97;&#111;&#98;&#x61;&#105;&#49;&#x32;&#51;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;</a>    密码：qwe123456</td>
+<td>1、进入慕课网   2、点击注册按钮3、输入邮箱地址4、输入密码5、输入正确的验证码   6、点击注册</td>
+<td>跳转到注册成功，提示已发送邮件</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td>账号：a11111 222222密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
-<td>注册成功</td>
-<td>注册成功</td>
 </tr>
 <tr>
 <td>3</td>
+<td>使用错误的邮箱注册失败</td>
+<td>该功能已经完善</td>
+<td>输入的账号未注册</td>
+<td>高</td>
+<td>高</td>
+<td>账号：慕课网  密码：qwe123456</td>
+<td>1、进入慕课网   2、点击注册按钮3、输入邮箱地址4、输入密码5、输入正确的验证码   6、点击注册</td>
+<td>提示请输入正确的邮箱地址</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td>账号：11111 222222/*&amp;asd12密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
-<td>注册失败，提示账号格式不正确</td>
-<td>注册失败，提示账号格式不正确</td>
 </tr>
 <tr>
 <td>4</td>
+<td>注册时输入不符合规范的密码注册失败（要求密码长度6-16位，不能有空格）</td>
+<td>该功能已经完善</td>
+<td>输入的账号未注册</td>
+<td>高</td>
+<td>高</td>
+<td>账号：<a href="mailto:&#x79;&#105;&#x78;&#105;&#x61;&#111;&#98;&#97;&#105;&#x31;&#x32;&#x33;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#109;">&#x79;&#105;&#x78;&#105;&#x61;&#111;&#98;&#97;&#105;&#x31;&#x32;&#x33;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#109;</a>    密码：12345                       账号：<a href="mailto:&#x79;&#105;&#x78;&#105;&#x61;&#x6f;&#x62;&#x61;&#x69;&#49;&#x32;&#x33;&#x40;&#113;&#x71;&#46;&#99;&#111;&#x6d;">&#x79;&#105;&#x78;&#105;&#x61;&#x6f;&#x62;&#x61;&#x69;&#49;&#x32;&#x33;&#x40;&#113;&#x71;&#46;&#99;&#111;&#x6d;</a>    密码：12345678910111314账号：<a href="mailto:&#x79;&#x69;&#x78;&#105;&#97;&#x6f;&#98;&#97;&#x69;&#49;&#x32;&#x33;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#x79;&#x69;&#x78;&#105;&#97;&#x6f;&#98;&#97;&#x69;&#49;&#x32;&#x33;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a>    密码：12   67</td>
+<td>1、进入慕课网   2、点击注册按钮3、输入邮箱地址4、输入密码5、输入正确的验证码   6、点击注册</td>
+<td>提示密码不符合规范</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td>账号：aa11111 222222/aa112密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示账号长度不正确</td>
-<td>注册失败，提示账号长度不正确</td>
 </tr>
 <tr>
 <td>5</td>
+<td>使用手机号注册</td>
+<td>该功能已经完善</td>
+<td>输入的账号未注册</td>
+<td>高</td>
+<td>高</td>
+<td>手机号：18365182306</td>
+<td>1、进入慕课网   2、点击注册按钮3、输入手机号   4、输入正确的验证码   5、点击注册</td>
+<td>跳转到输入手机验证码界面</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td>账号：a11111 222222密码：abcdefgf/12345678/*&amp;^#1234昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示密码格式不正确</td>
-<td>注册失败，提示密码格式不正确</td>
 </tr>
 <tr>
 <td>6</td>
+<td>使用错误的手机号注册失败</td>
+<td>该功能已经完善</td>
+<td>输入的账号未注册</td>
+<td>高</td>
+<td>高</td>
+<td>手机号：1836518236手机号：183651823066</td>
+<td>1、进入慕课网   2、点击注册按钮3、输入手机号   4、输入正确的验证码   5、点击注册</td>
+<td>提示请输入正确的手机号</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td>账号：a11111222222密码：abc12345 确认密码：acc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示确认密码和输入密码不一致</td>
-<td>注册失败，提示确认密码和输入密码不一致</td>
 </tr>
 <tr>
 <td>7</td>
+<td>判断验证码输入错误时注册失败</td>
+<td>该功能已经完善</td>
+<td>输入的账号未注册</td>
+<td>高</td>
+<td>高</td>
+<td>账号：<a href="mailto:&#121;&#x69;&#120;&#105;&#97;&#111;&#x62;&#x61;&#x69;&#49;&#x32;&#x33;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;">&#121;&#x69;&#120;&#105;&#97;&#111;&#x62;&#x61;&#x69;&#49;&#x32;&#x33;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;</a>    密码：qwe123456</td>
+<td>1、进入慕课网   2、点击注册按钮3、输入邮箱地址4、输入密码5、输入错误的验证码   6、点击注册</td>
+<td>提示验证码错误</td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td>账号：a11111222222密码：abc12345 确认密码：abc12345 昵称：翼小白12</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示昵称格式不正确</td>
-<td>注册失败，提示昵称格式不正确</td>
 </tr>
 </tbody></table>
-<pre class="line-numbers language-none"><code class="language-none">测试的一些常识：
-1、测试是无穷无尽的
-2、
-评审：
-同行评审、小组评审、部门评审、项目评审、第三方评审、邮件评审<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>2、搜索功能的测试用例</p>
+<pre class="line-numbers language-none"><code class="language-none">搜索功能
+1 输入任意信息点击搜索跳转至搜索结果页面
+2 在搜索结果页面输入任意信息可以进行全站搜索
+3 可以筛选搜索结果
+4 可以点击热门搜索进行快捷操作
+5 点击搜索结果可以跳转至对应界面
+6 搜索完成后显示搜到的结果数目<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>测试执行阶段：如果预期结果和实际结果一致，则测试通过；若不一致，则提交bug。测试执行阶段主要的工作就是提交bug和回归测试。</p>
-<pre class="line-numbers language-none"><code class="language-none">bug的管理：
-bug的管理平台&#x2F;系统&#x2F;工具
-	禅道、BUGFree、ALM&#x2F;QC、testlink、Bugzilla、JIRA等。
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>用例名称</th>
+<th>测试背景</th>
+<th>前置条件</th>
+<th>重要级</th>
+<th>优先级</th>
+<th>测试数据</th>
+<th>测试步骤</th>
+<th>预期结果</th>
+<th>实际结果</th>
+<th>编写人</th>
+<th>执行人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>搜索功能正常有效</td>
+<td>测试搜索功能完善，满足用户的需求</td>
+<td>系统内已有各类型的数据</td>
+<td>高</td>
+<td>高</td>
+<td>搜索内容：1111</td>
+<td>1、进入慕课网   2、在搜索框中输入搜索内容   3、点击搜索按钮</td>
+<td>跳转至搜索界面，并搜索出系统里所有包含搜索内容的信息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>搜索页面的搜索功能正常有效</td>
+<td>测试搜索功能完善，满足用户的需求</td>
+<td>系统内已有各类型的数据，已进入搜索页面</td>
+<td>高</td>
+<td>高</td>
+<td>搜索内容：1111</td>
+<td>1、在搜索页面的搜索框中输入搜索内容   2、点击搜索按钮</td>
+<td>搜索出系统里所有包含搜索内容的信息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>搜索结果筛选功能正常有效</td>
+<td>测试搜索功能完善，满足用户的需求</td>
+<td>系统内已有各类型的数据，已进入搜索页面</td>
+<td>高</td>
+<td>高</td>
+<td>搜索内容：1111</td>
+<td>1、在搜索页面的搜索框中输入搜索内容   2、点击搜索按钮      3、点击搜索框下方的课程    4、点击搜索框下方的猿问   5、点击搜索框下方的手记</td>
+<td>1、搜索出系统中所有包含搜索内容的信息   2、仅显示课程里包含搜索内容的条目       3、仅显示猿问里包含搜索内容的条目     4、仅显示手记里包含搜索内容的条目</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>点击热门搜索可快速搜索热门搜索的内容</td>
+<td>测试搜索功能完善，满足用户的需求</td>
+<td>系统内已有各类型的数据，已进入搜索页面</td>
+<td>高</td>
+<td>高</td>
+<td>搜索内容：</td>
+<td>1、点击搜索框下面的热门搜索条码</td>
+<td>搜索出该热门搜索的所有条目</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>搜索完成后显示搜索到的条目数量</td>
+<td>测试搜索功能完善，满足用户的需求</td>
+<td>系统内已有各类型的数据</td>
+<td>高</td>
+<td>高</td>
+<td>搜索内容：1111</td>
+<td>1、进入慕课网   2、在搜索框中输入搜索内容   3、点击搜索按钮</td>
+<td>1、搜索出系统里所有包含搜索内容的信息          2、显示搜索到的结果数量，并和实际的保持一致</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>点击搜索结果可以跳转到对应的界面</td>
+<td>测试搜索功能完善，满足用户的需求</td>
+<td>系统内已有各类型的数据</td>
+<td>高</td>
+<td>高</td>
+<td>搜索内容：1111</td>
+<td>1、进入慕课网   2、在搜索框中输入搜索内容   3、点击搜索按钮       4、点击任意搜索到的信息</td>
+<td>1、搜索出系统里所有包含搜索内容的信息          2、跳转到对应的界面</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>3、下载APP功能测试用例</p>
+<pre class="line-numbers language-none"><code class="language-none">下载APP功能
+1  鼠标移动至相应图标位置出现扫描下载二维码    
+2  扫描二维码跳转至下载页面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-bug生命周期
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>用例名称</th>
+<th>测试背景</th>
+<th>前置条件</th>
+<th>重要级</th>
+<th>优先级</th>
+<th>测试数据</th>
+<th>测试步骤</th>
+<th>预期结果</th>
+<th>实际结果</th>
+<th>编写人</th>
+<th>执行人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>鼠标移动到对应图标，显示二维码</td>
+<td>测试下载APP功能完成，满足客户需求</td>
+<td>该功能开发已完成，并且通过了开发自验证</td>
+<td>高</td>
+<td>中</td>
+<td></td>
+<td>1、进入慕课网         2、鼠标移动到下载APP图标上</td>
+<td>1、显示二维码</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>扫描二维码跳转至下载页面</td>
+<td>测试下载APP功能完成，满足客户需求</td>
+<td>该功能开发已完成，并且通过了开发自验证</td>
+<td>高</td>
+<td>中</td>
+<td></td>
+<td>1、进入慕课网         2、鼠标移动到下载APP图标上      3、手机扫描二维码</td>
+<td>1、正确识别二维码，跳转至对应的下载页面</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+  <pre class="line-numbers language-none"><code class="language-none">注意：为更加完善测试用例，可加上所属模块、模块编号、功能介绍、版本号、测试环境、测试类型、测试阶段、开发人员等信息。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="测试用例评审"><a href="#测试用例评审" class="headerlink" title="测试用例评审"></a>测试用例评审</h2><pre class="line-numbers language-none"><code class="language-none">1、什么是测试用例评审？
+	1、简单来说，评审就是对测试用例进行检查
+	2、评审包括同行评审、小组评审、部门评审、三方（开发、产品、客户等）评审等
+	3、不同的评审类型会有不同的角色参加
+
+2、评审的意义是什么？
+	1、通过评审可以发现测试用例的不足
+	2、方便测试人员改进测试用例
+	3、达到在测试时提高测试质量的目的
 	
-bug六要素
-	编号、BUG的名称、BUG的优先级（高、中、低）、BUG的严重级别（致命的：影响软件核心功能的正常使用；软件闪退、崩溃；和钱有关。严重的：导致功能无法正常使用；一般的：功能的某些场景异常有问题；轻微的：建议性、UI、用户体验方面的问题。）、BUG复现步骤（用例步骤+实际结果+预期结果）、附件（附件的作用佐证bug存在，可用截图、日志、视频等）
+3、评审的流程（直到测试用例被认可通过）
+	改进测试用例----&gt;评审----&gt;改进测试用例----&gt;评审
+	注意：评审的过程不是一次性的，是一个持续改进的过程。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-bug的状态
-	新建&#x2F;new、打开&#x2F;激活&#x2F;open、已确认、已解决、拒绝、重新打开&#x2F;reopen、关闭&#x2F;closed、延期处理、重复BUG
+<h2 id="测试用例的管理"><a href="#测试用例的管理" class="headerlink" title="测试用例的管理"></a>测试用例的管理</h2><pre class="line-numbers language-none"><code class="language-none">1、如何管理测试用例？
+	（1）原始的excel表格管理方式
+	（2）专业的项目管理系统
 
-回归测试：在版本2中检查版本1中发现的问题是否被修复解决。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+2、如何管理测试用例？
+	ALM    禅道     testlink     Bugzilla     JIRA
+    
+3、禅道的基本应用
+	（1）专业的研发项目管理软件
+	（2）完整支持敏捷开发流程
+	（3）完整软件生命周期管理<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-none"><code class="language-none">版本迭代：随着时间&#x2F;测试次数的推进会发布很多版本，其中版本号是不断叠加的。
-增量测试：只测试已知的有变化的部分
-全量测试：测试软件的所有功能<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="day-4-测试应用和测试报告"><a href="#day-4-测试应用和测试报告" class="headerlink" title="day 4  测试应用和测试报告"></a>day 4  测试应用和测试报告</h2><pre class="line-numbers language-none"><code class="language-none">测试应用：APP测试、WEB测试
-软件结构：B&#x2F;S （browser&#x2F;server  浏览器和服务器）   C&#x2F;S（client&#x2F;server  客户端和服务器）
-B&#x2F;S和C&#x2F;S的区别：
-浏览器不需要安装，版本更新时，只需要服务器更新，访问网页可以访问最新版本。
-客户端，版本更新时客户端和服务器都要更新。
-APP测试比WEB测试更加复杂，APP测试需要测试（APP专项测试）
-（1 安装、卸载；
- (2 消息推送、
- (3 更新、
- (4 弱网测试（2G&#x2F;3G&#x2F;4G&#x2F;5G&#x2F;WIFI等、
- (5 场景交互测试（来电话、听音乐、调用相机、前后台的切换）、
- (6 权限测试
-（7 离线测试 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">测试总结阶段要编写测试报告
-测试报告（核心包含）：对工作的总结、对BUG的统计分析、对被测软件的评估
-
-bug的统计分析：可以根据不同的属性对bug进行统计分析；如根据测试、开发、软件模块、bug等级、解决时间、软件版本、bug状态等
-
-对被测软件质量的评估
-	一二级的bug全部关闭
-	三级的bug关闭80%+
-	四级的bug修不修改无所谓
-当软件的质量达到以上标准就认为软件已达到验收标准<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>测试计划、测试方案、测试策略、测试用例的编写。<br> BUG的定义、BUG的分类、BUG的六要素、BUG的生命周期。<br> 测试和开发流程的关系、瀑布流、V字形、W字型（双V）、螺旋型、敏捷等等。<br> 戴明环、5W2H等分析管理的方法<br> 质量管理体系CMMI（了解）</p>
-<h1 id="接口测试相关（公众号）"><a href="#接口测试相关（公众号）" class="headerlink" title="接口测试相关（公众号）"></a>接口测试相关（公众号）</h1><p>——阿里技术《如何编写有效的接口测试》</p>
-<p><strong>接口测试的好处</strong></p>
-<p>有效且覆盖完整的接口测试，能够保障新功能的开发质量；让开发在修改功能逻辑的时候有回归的能力；也是能优雅地进行重构的前提。</p>
-<pre class="line-numbers language-none"><code class="language-none">测试能够保障代码的开发质量，新功能测试可以保障新功能逻辑正确；回归测试保障原有业务功能逻辑正确；
-测试的方式：人工测试和自动化测试
-自动化测试的特点：可持续、可重复、甚至可AI化。
-
-注：易测性也是代码结构合理的一个指标。
-
-测试的分层从大到小：
-全链路测试---&gt;域链路测试（架构域A）---&gt;(系统)接口测试---&gt;模块测试---&gt;单元测试
-
-单元测试：对单个类或单个方法的测试。当是一个工具或一段比较内聚又复杂的逻辑（如算法逻辑），应使用单元测试来保障逻辑的正确性。
-
-模块测试：系统比较大，模块比较多的情况下可以建立模块测试层，保障各模块功能的正确性。当前系统的发展趋势是微服务架构，模块测试非十分必要，可通过接口测试层来覆盖。
-
-接口测试：从系统入口出发进行集成测试。（入口测试）应用入口通常是HSF（一个分布式RPC服务框架）服务，消息，定时任务。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>接口测试要遵循的原则</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">测试的原则
-
-基础原则：
-（1）自动化：接口测试是非交互式的自动化执行，不需要人参与
-（2）独立性：接口测试之间不应该相互依赖
-（3）可重复：接口测试可重复执行，不受环境影响
-（4）接口测试遵循BCDE原则，保障接口的交付质量。
-	Border：边界测试
-	Correct：正确的输入，正确的预期输出
-	Design：按照需求和设计文档编写测试逻辑
-	Error：错误输入，预期输出
-（5）数据准备：数据准备通过系统服务进行，不能通过直接插入db方式（插入数据库）
-（6）可测性：对于不可测的代码需要进行重构成合理的结构
-（7）覆盖性：接口测试需要覆盖所有的UC，同时代码覆盖率和分支覆盖率应达到一定标准，新增代码必须被覆盖
-（8）持续性：如果代码修改导致已有接口测试执行失败，必须修复代码问题或者测试代码逻辑
-（9）时间要求：接口测试应该在项目发布之前完成，不应该放到项目发布之后补充
-
-以上基本原则应适用于所有层的自动化测试用例，在编写接口测试时，除了以上原则，还有其它原则需要遵守
-
-有效接口测试的关键原则是要覆盖所有入口；mock所有依赖；校验执行过程中所留下的痕迹。
-
-（1）入口覆盖：接口测试用例必须覆盖HSF服务入口、消息入口、定时任务入口。
-（2）依赖mock：接口测试不能受环境依赖，需要mock掉对外依赖。但对于db依赖，不建议完全mock掉，一方面mock的成本高，另外可能覆盖不到sql和表约束逻辑。
-（3）校验完整：有效接口测试应具备完整的校验，没有校验的接口测试是没有意义的。执行过程中留下的的痕迹对业务有影响，都要进行完整校验，方能保障接口测试的有效性。
-	HSF接口返回值校验：按照场景和接口约定进行HSF返回参数校验
-	DB校验：校验落地数据的正确性
-	缓存校验：校验存入缓存中数据的正确性
-	HSF依赖入参校验：通过mock工具获得依赖HSF调用的入参，进行入参校验。
-	消息校验：通过mock工具获得发送的消息对象，进行消息体校验。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>测试代码的结构</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">1、和业务代码一样，考虑可读、可拓展、可复用性。
-2、可根据系统的业务特性，在测试框架的基础上封装适合当前系统的测试组件，提高测试代码编写效率，规范测试代码结构。
-
-接口的测试代码结构：
-
-1、测试准备
-
-依赖数据准备
-	配置数据：可通过定义配置文件来初始化配置
-	业务数据：这里数据，禁止通过直接插入数据方式产生，而应通过调用业务服务产生。
-	
-依赖mock
-	对于外部依赖，需要对被依赖的服务进行mock，避免真实调用
-	
-接口测试入参准备
-	准备接口方面的入参。
-	
-2、测试执行
-
-调用接口方法，执行业务逻辑。
-
-3、测试校验
-
-	返回参数校验：检验接口的返回参数
-	DB：校验DB落地数据
-	缓存数据校验：校验落地到缓存中的数据
-	消息校验：校验对外发送的消息对象
-	对外HSF调用校验：校验对外HSF调用的入参。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>接口测试的实践技巧</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">1、执行效率（需要关注的点）
-
-提高测试执行效率的建议方案：
-
-（1）最小化启动测试上下文，例如spring boot的应用，启动spring就可以了
-（2）使用内存数据库，例如h2
-（3）将中间件依赖mock掉
-
-2、测试框架选择
-
-建议选择基于testng，能够提供通过配置文件做数据准备的测试框架。如果找不到合适的，可以自己基于testng进行封装。
-
-3、接口测试覆盖度
-
-（1）基于业务场景和测试经验枚举出正常和异常情况
-（2）一些固定需要测试的点：幂等测试、边界值测试、参数不正确测试等等。
-
-同时，要通过覆盖率工具查看接口未覆盖的代码或分支逻辑，进行针对性的场景覆盖测试。分支完整性覆盖非常重要，特别是异常的分支。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h1 id="51Testing"><a href="#51Testing" class="headerlink" title="51Testing"></a>51Testing</h1><h2 id="如何编写好一条测试用例"><a href="#如何编写好一条测试用例" class="headerlink" title="如何编写好一条测试用例"></a>如何编写好一条测试用例</h2><p>1、编写测试用例的时间：需求评审、技术方案确定后，提测之前</p>
-<p>2、测试用例的好处：</p>
-<pre class="line-numbers language-none"><code class="language-none">1、任何测试人员都可以执行
-2、减少不必要的沟通成本，节省实际执行时间
-3、尽可能减少重复劳动
-4、归档（为后续的迭代、回归、回溯或交接等提供清晰的依据以及指导。）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>3、测试用例必要字段</p>
-<pre class="line-numbers language-none"><code class="language-none">1、用例名称：简洁且完整的说明该条用例的作用
-2、前置条件：执行用例需要做哪些前置步骤
-3、用例步骤或输入步骤（执行用例的每步操作）
-4、预期结果（明确、清晰、完整的描写相关的检查点，确保能明确判断用例是否通过）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>4、测试用例的扩展字段</p>
-<pre class="line-numbers language-none"><code class="language-none">1、用例编号：用例ID，一般命名方式为：需求编号+功能模块代号+测试类别+编号
-2、优先级：用例执行的优先级，一般将开发提测前自测的用例设置为最高级，一般为正常功能、主流程用例
-3、使用平台：测试平台，如安卓、iOS、PC、MAC等
-4、是否自动化
-5、关联需求：关联至该需求，便于回溯
-6、是否通过
-7、网络：测试环境的网络情况及相关参数
-8、备注：注明该用例需要注意的事项<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -865,7 +1016,7 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yixiaobaiio.github.io/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">https://yixiaobaiio.github.io/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a>
+                    <a href="https://yixiaobaiio.github.io/2021/04/29/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E6%95%99%E7%A8%8B/">https://yixiaobaiio.github.io/2021/04/29/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E6%95%99%E7%A8%8B/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1070,9 +1221,10 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/04/29/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E6%95%99%E7%A8%8B/">
                     <div class="card-image">
@@ -1090,9 +1242,9 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1101,6 +1253,7 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -1111,12 +1264,13 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/24/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/">
+                <a href="/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg" class="responsive-img" alt="软件测试理论基础">
                         
-                        <span class="card-title">软件测试理论基础</span>
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="软件测试基础">
+                        
+                        <span class="card-title">软件测试基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1127,7 +1281,7 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
                             </span>
                         <span class="publish-author">
                             
