@@ -132,8 +132,8 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/longbig
-  email: dnboy985@gmail.com
+  github:  https://github.com/yixiaobaiio
+  email: yixiaobai123@gmail.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: 1546082227
