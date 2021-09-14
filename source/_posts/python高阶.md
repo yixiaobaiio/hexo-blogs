@@ -1,1 +1,1 @@
-![](https://github.com/yixiaobaiio/hexo-blogs/blob/25626741f582e49610f1eaa7e0e99ed06697d691/source/img/python%E9%AB%98%E9%98%B6.png)
+![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python.png?raw=true)
