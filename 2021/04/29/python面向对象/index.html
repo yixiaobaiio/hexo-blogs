@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="软件测试基础, 翼小白的博客">
+    <meta name="keywords" content="python面向对象（一）, 翼小白的博客">
     <meta name="description" content="大学 | 程序猿">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>软件测试基础 | 翼小白的博客</title>
+    <title>python面向对象（一） | 翼小白的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">软件测试基础</h1>
+                    <h1 class="description center-align post-title">python面向对象（一）</h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-27
+                    2021-04-29
                 </div>
                 
 
@@ -467,377 +467,74 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="软件测试基础"><a href="#软件测试基础" class="headerlink" title="软件测试基础"></a>软件测试基础</h1><p>来自B站浪晋的测试小讲堂萌芽计划笔记</p>
-<h2 id="day-1-软件测试的介绍和分类"><a href="#day-1-软件测试的介绍和分类" class="headerlink" title="day 1   软件测试的介绍和分类"></a>day 1   软件测试的介绍和分类</h2><p>测试的定义、测试的分类、测试的方法、测试的生命周期。</p>
-<p>软件测试：就是检查实际结果和预期结果是否一致。检查软件开发中存在的问题缺陷。保证软件质量符合客户需求的一系列手段。</p>
-<p><strong>软件测试的职业规划</strong></p>
-<p><img src="https://raw.githubusercontent.com/yixiaobaiio/yixiaobaiio.github.io/master/img/1.png"></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/3.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">软件测试的分类：
+                <h1 id="python面向对象"><a href="#python面向对象" class="headerlink" title="python面向对象"></a>python面向对象</h1><p>抽象类：作为父类存在，一旦对象化会报错，python3.8可对象化。抽象函数定义在抽象类中，子类必须重写该函数才能使用，相应的抽象函数，则是使用装饰器@abstractmethod来表示。</p>
+<p>抽象类是一种自上而下的设计风范，只需要用少量的代码描述清楚要做的事情，定义好接口。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> abc <span class="token keyword">import</span> ABCMeta<span class="token punctuation">,</span>abstractmethod
 
-按方法划分：
+<span class="token keyword">class</span> <span class="token class-name">Entity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token decorator annotation punctuation">@abstractmethod</span>
+    <span class="token keyword">def</span> <span class="token function">get_title</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+    <span class="token decorator annotation punctuation">@abstractmethod</span>
+    <span class="token keyword">def</span> <span class="token function">set_title</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>title<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+<span class="token keyword">class</span> <span class="token class-name">Document</span><span class="token punctuation">(</span>Entity<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">get_title</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>title
+    <span class="token keyword">def</span> <span class="token function">set_title</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>title<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>title <span class="token operator">=</span> title
+document <span class="token operator">=</span> Document<span class="token punctuation">(</span><span class="token punctuation">)</span>
+document<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">'Harry Potter'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>get_title<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+entity <span class="token operator">=</span> Entity<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>entity<span class="token punctuation">)</span>
+entity<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>entity<span class="token punctuation">.</span>get_title<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-	黑盒测试：将软件看作是一个不能打开的黑盒子，来测试其功能实现。
 
-	白盒测试：知道软件的内部结构，了解软件的内部逻辑进行测试。
+D<span class="token punctuation">:</span>\Enviroments\python\python\python3<span class="token punctuation">.</span>exe D<span class="token punctuation">:</span><span class="token operator">/</span>python_project<span class="token operator">/</span>jike<span class="token operator">/</span>json_1<span class="token punctuation">.</span>py
+Harry Potter
+<span class="token operator">&lt;</span>__main__<span class="token punctuation">.</span>Entity <span class="token builtin">object</span> at <span class="token number">0x000001F705F966A0</span><span class="token operator">></span>
+<span class="token boolean">None</span>
 
-	灰盒测试：介于黑盒和白盒之间。
+Process finished <span class="token keyword">with</span> exit code <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-按方向划分：
+<p>面向对象的四要素：类、属性、对象、函数（方法）</p>
+<p>类：具有相同属性和函数（方法）的对象（实例）的集合。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">多继承，构造函数的执行顺序：
 
-	功能测试：测试软件的功能实现是否符合用户需求，功能是否存在缺陷。
+<span class="token keyword">class</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'enter A'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'leave A'</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">B</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'enter B'</span><span class="token punctuation">)</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'leave B'</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">C</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'enter C'</span><span class="token punctuation">)</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'leave C'</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">D</span><span class="token punctuation">(</span>B<span class="token punctuation">,</span>C<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'enter D'</span><span class="token punctuation">)</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'leave D'</span><span class="token punctuation">)</span>
+D<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-	性能测试：
-			压力测试：测试软件的性能瓶颈，即软件最大的承受能力。
-			负载测试：测试软件最大负荷情况下正常持续工作的时间，能力。
-			并发测试：测试软件同时处理多个请求的能力。
+D<span class="token punctuation">:</span>\Enviroments\python\python\python3<span class="token punctuation">.</span>exe D<span class="token punctuation">:</span><span class="token operator">/</span>python_project<span class="token operator">/</span>jike<span class="token operator">/</span>json_1<span class="token punctuation">.</span>py
+enter D
+enter B
+enter C
+enter A
+leave A
+leave C
+leave B
+leave D
 
-	安全测试：是否存在漏洞，容易被黑客攻击。
-
-黑盒测试不是功能测试，它们的分类方式不同。黑盒测试是进行功能测试的一种方法。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/4.png?raw=true"></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/5.png?raw=true"></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/6.png?raw=true"></p>
-<p>软件公司研发团队的结构</p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/7.png?raw=true"></p>
-<p><strong>功能点的划分流程</strong>：从大到小划分功能点。</p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/13.png?raw=true"></p>
-<p><strong>职业规划</strong>(具体学习时间安排、职业发展规划)</p>
-<pre class="line-numbers language-none"><code class="language-none">学习安排
-1、2021.1 - 2021.3 学习java基础、软件测试基础知识并做好笔记
-2、2021.4 - 2021.7 学习javaWeb知识、测试工具的使用
-职业规划
-入职一年做好功能测试，并坚持写博客，学习总结
-2-3年 自动化测试工程师
-3-5年性能测试工程师<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="day-2-软件研发模型和测试流程"><a href="#day-2-软件研发模型和测试流程" class="headerlink" title="day 2  软件研发模型和测试流程"></a>day 2  软件研发模型和测试流程</h2><p>软件研发管理模型</p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/11.png?raw=true"></p>
-<p><strong>瀑布流</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/8.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：从上往下，每个步骤都是相互独立的，不可逆转。不变通，效率低。（流程的基础）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>V字型</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/9.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：测试和开发的工作一一对照，还是一个从上往下的过程。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>W字型</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/10.png?raw=true"></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：左侧的V是开发的工作，右侧V是测试的工作，开发和测试的工作可同步进行。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>敏捷模型</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">特点：没有具体的模型，高效的工作，及时的沟通，日报，白板，站立会!<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>测试流程</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">测试流程：需求分析阶段 ---&gt;测试设计阶段 ---&gt; 测试执行阶段 ---&gt; 测试总结阶段
-具体每个阶段的工作：
-需求分析阶段：
-    1、进行需求分析：需求分析、产品说明书、口述（方式） 
-    2、学习业务流程（了解项目软件使用的专业知识）
-    3、提取功能点（从大到小划分功能，直到划分到最小功能点，思维导图或excel表）
-    4、编写需求分析说明书
-  注意：没有需求怎么办？参考市面上同类型的成熟软件的实现（参考其实现的规则）
- 测试设计阶段（文档阶段）：主要编写文档，测试计划、测试方案、测试策略、测试用例。
- 养成优秀测试的能力：测试、文档、编程
- 编写文档的方法：5W1H方法
- 测试计划说明书（测试计划、测试策略、测试方案）
- 测试计划的重点：时间、人员和资源的安排及分配
- 测试方案的重点：针对每个测试的内容如何开展测试、采用什么测试计划？使用什么测试工具
- 测试策略的重点：哪些内容先测试、哪些内容后测试、测试开始和结束的标准是什么
- 测试执行阶段：
- 测试总结阶段：
-    
-        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/14.png?raw=true"></p>
-<h2 id="day-3-测试用例的编写和bug管理"><a href="#day-3-测试用例的编写和bug管理" class="headerlink" title="day 3  测试用例的编写和bug管理"></a>day 3  测试用例的编写和bug管理</h2><p>测试用例为测试人员工作提供一个测试工作依据。</p>
-<p>测试用例根据软件需求说明书进行编写，其执行的多少可估计为软件测试的覆盖率，测试用例覆盖到需求说明书中所有的软件功能，可以说测试用例覆盖率为100%。</p>
-<p>测试方法：等价类、边界值、场景法（三个重要的）、因果图、判定表、路径覆盖、、、、</p>
-<pre class="line-numbers language-none"><code class="language-none">等价类：分为无效等价类和有效等价类（即有效值和无效值）
-边界值：
-场景法：以微信发红包为例，用户的使用场景有发送成功和发送失败两种场景。
-发送成功：用户输入符合要求的数额，发送成功
-发送失败：用户什么都不输入发送失败；输入超出范围的数额发送失败；用户发送非数字的值，发送失败。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">测试用例要素：
-测试用例编号（唯一的）
-测试用例名称（言简意赅，用最少的字描述清楚测试用例的功能）
-前置条件（执行该测试用例之前必须满足的条件）
-优先级（执行该用例的时间要求紧急级别）
-重要级（这个被测的功能在系统里面的重要级别）
-测试数据
-测试步骤
-预期结果
-实际结果
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>测试用例编写练习</strong></p>
-<p><img src="https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/3-16.png?raw=true"></p>
-<table>
-<thead>
-<tr>
-<th>用例编号</th>
-<th>用例名称</th>
-<th>前置条件</th>
-<th>优先级</th>
-<th>重要级</th>
-<th>测试数据</th>
-<th>测试步骤</th>
-<th>预期结果</th>
-<th>实际结果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>注册功能</td>
-<td></td>
-<td></td>
-<td></td>
-<td>账号：a11111 密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
-<td>注册成功</td>
-<td>注册成功</td>
-</tr>
-<tr>
-<td>2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>账号：a11111 222222密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
-<td>注册成功</td>
-<td>注册成功</td>
-</tr>
-<tr>
-<td>3</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>账号：11111 222222/*&amp;asd12密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称，点击注册按钮</td>
-<td>注册失败，提示账号格式不正确</td>
-<td>注册失败，提示账号格式不正确</td>
-</tr>
-<tr>
-<td>4</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>账号：aa11111 222222/aa112密码：abc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示账号长度不正确</td>
-<td>注册失败，提示账号长度不正确</td>
-</tr>
-<tr>
-<td>5</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>账号：a11111 222222密码：abcdefgf/12345678/*&amp;^#1234昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示密码格式不正确</td>
-<td>注册失败，提示密码格式不正确</td>
-</tr>
-<tr>
-<td>6</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>账号：a11111222222密码：abc12345 确认密码：acc12345 昵称：翼小白</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示确认密码和输入密码不一致</td>
-<td>注册失败，提示确认密码和输入密码不一致</td>
-</tr>
-<tr>
-<td>7</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>账号：a11111222222密码：abc12345 确认密码：abc12345 昵称：翼小白12</td>
-<td>输入账号、密码、确认密码和昵称点击注册按钮</td>
-<td>注册失败，提示昵称格式不正确</td>
-<td>注册失败，提示昵称格式不正确</td>
-</tr>
-</tbody></table>
-<pre class="line-numbers language-none"><code class="language-none">测试的一些常识：
-1、测试是无穷无尽的
-2、
-评审：
-同行评审、小组评审、部门评审、项目评审、第三方评审、邮件评审<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>测试执行阶段：如果预期结果和实际结果一致，则测试通过；若不一致，则提交bug。测试执行阶段主要的工作就是提交bug和回归测试。</p>
-<pre class="line-numbers language-none"><code class="language-none">bug的管理：
-bug的管理平台&#x2F;系统&#x2F;工具
-	禅道、BUGFree、ALM&#x2F;QC、testlink、Bugzilla、JIRA等。
-
-bug生命周期
-	
-bug六要素
-	编号、BUG的名称、BUG的优先级（高、中、低）、BUG的严重级别（致命的：影响软件核心功能的正常使用；软件闪退、崩溃；和钱有关。严重的：导致功能无法正常使用；一般的：功能的某些场景异常有问题；轻微的：建议性、UI、用户体验方面的问题。）、BUG复现步骤（用例步骤+实际结果+预期结果）、附件（附件的作用佐证bug存在，可用截图、日志、视频等）
-
-bug的状态
-	新建&#x2F;new、打开&#x2F;激活&#x2F;open、已确认、已解决、拒绝、重新打开&#x2F;reopen、关闭&#x2F;closed、延期处理、重复BUG
-
-回归测试：在版本2中检查版本1中发现的问题是否被修复解决。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">版本迭代：随着时间&#x2F;测试次数的推进会发布很多版本，其中版本号是不断叠加的。
-增量测试：只测试已知的有变化的部分
-全量测试：测试软件的所有功能<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="day-4-测试应用和测试报告"><a href="#day-4-测试应用和测试报告" class="headerlink" title="day 4  测试应用和测试报告"></a>day 4  测试应用和测试报告</h2><pre class="line-numbers language-none"><code class="language-none">测试应用：APP测试、WEB测试
-软件结构：B&#x2F;S （browser&#x2F;server  浏览器和服务器）   C&#x2F;S（client&#x2F;server  客户端和服务器）
-B&#x2F;S和C&#x2F;S的区别：
-浏览器不需要安装，版本更新时，只需要服务器更新，访问网页可以访问最新版本。
-客户端，版本更新时客户端和服务器都要更新。
-APP测试比WEB测试更加复杂，APP测试需要测试（APP专项测试）
-（1 安装、卸载；
- (2 消息推送、
- (3 更新、
- (4 弱网测试（2G&#x2F;3G&#x2F;4G&#x2F;5G&#x2F;WIFI等、
- (5 场景交互测试（来电话、听音乐、调用相机、前后台的切换）、
- (6 权限测试
-（7 离线测试 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">测试总结阶段要编写测试报告
-测试报告（核心包含）：对工作的总结、对BUG的统计分析、对被测软件的评估
-
-bug的统计分析：可以根据不同的属性对bug进行统计分析；如根据测试、开发、软件模块、bug等级、解决时间、软件版本、bug状态等
-
-对被测软件质量的评估
-	一二级的bug全部关闭
-	三级的bug关闭80%+
-	四级的bug修不修改无所谓
-当软件的质量达到以上标准就认为软件已达到验收标准<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>测试计划、测试方案、测试策略、测试用例的编写。<br> BUG的定义、BUG的分类、BUG的六要素、BUG的生命周期。<br> 测试和开发流程的关系、瀑布流、V字形、W字型（双V）、螺旋型、敏捷等等。<br> 戴明环、5W2H等分析管理的方法<br> 质量管理体系CMMI（了解）</p>
-<h1 id="接口测试相关（公众号）"><a href="#接口测试相关（公众号）" class="headerlink" title="接口测试相关（公众号）"></a>接口测试相关（公众号）</h1><p>——阿里技术《如何编写有效的接口测试》</p>
-<p><strong>接口测试的好处</strong></p>
-<p>有效且覆盖完整的接口测试，能够保障新功能的开发质量；让开发在修改功能逻辑的时候有回归的能力；也是能优雅地进行重构的前提。</p>
-<pre class="line-numbers language-none"><code class="language-none">测试能够保障代码的开发质量，新功能测试可以保障新功能逻辑正确；回归测试保障原有业务功能逻辑正确；
-测试的方式：人工测试和自动化测试
-自动化测试的特点：可持续、可重复、甚至可AI化。
-
-注：易测性也是代码结构合理的一个指标。
-
-测试的分层从大到小：
-全链路测试---&gt;域链路测试（架构域A）---&gt;(系统)接口测试---&gt;模块测试---&gt;单元测试
-
-单元测试：对单个类或单个方法的测试。当是一个工具或一段比较内聚又复杂的逻辑（如算法逻辑），应使用单元测试来保障逻辑的正确性。
-
-模块测试：系统比较大，模块比较多的情况下可以建立模块测试层，保障各模块功能的正确性。当前系统的发展趋势是微服务架构，模块测试非十分必要，可通过接口测试层来覆盖。
-
-接口测试：从系统入口出发进行集成测试。（入口测试）应用入口通常是HSF（一个分布式RPC服务框架）服务，消息，定时任务。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>接口测试要遵循的原则</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">测试的原则
-
-基础原则：
-（1）自动化：接口测试是非交互式的自动化执行，不需要人参与
-（2）独立性：接口测试之间不应该相互依赖
-（3）可重复：接口测试可重复执行，不受环境影响
-（4）接口测试遵循BCDE原则，保障接口的交付质量。
-	Border：边界测试
-	Correct：正确的输入，正确的预期输出
-	Design：按照需求和设计文档编写测试逻辑
-	Error：错误输入，预期输出
-（5）数据准备：数据准备通过系统服务进行，不能通过直接插入db方式（插入数据库）
-（6）可测性：对于不可测的代码需要进行重构成合理的结构
-（7）覆盖性：接口测试需要覆盖所有的UC，同时代码覆盖率和分支覆盖率应达到一定标准，新增代码必须被覆盖
-（8）持续性：如果代码修改导致已有接口测试执行失败，必须修复代码问题或者测试代码逻辑
-（9）时间要求：接口测试应该在项目发布之前完成，不应该放到项目发布之后补充
-
-以上基本原则应适用于所有层的自动化测试用例，在编写接口测试时，除了以上原则，还有其它原则需要遵守
-
-有效接口测试的关键原则是要覆盖所有入口；mock所有依赖；校验执行过程中所留下的痕迹。
-
-（1）入口覆盖：接口测试用例必须覆盖HSF服务入口、消息入口、定时任务入口。
-（2）依赖mock：接口测试不能受环境依赖，需要mock掉对外依赖。但对于db依赖，不建议完全mock掉，一方面mock的成本高，另外可能覆盖不到sql和表约束逻辑。
-（3）校验完整：有效接口测试应具备完整的校验，没有校验的接口测试是没有意义的。执行过程中留下的的痕迹对业务有影响，都要进行完整校验，方能保障接口测试的有效性。
-	HSF接口返回值校验：按照场景和接口约定进行HSF返回参数校验
-	DB校验：校验落地数据的正确性
-	缓存校验：校验存入缓存中数据的正确性
-	HSF依赖入参校验：通过mock工具获得依赖HSF调用的入参，进行入参校验。
-	消息校验：通过mock工具获得发送的消息对象，进行消息体校验。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>测试代码的结构</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">1、和业务代码一样，考虑可读、可拓展、可复用性。
-2、可根据系统的业务特性，在测试框架的基础上封装适合当前系统的测试组件，提高测试代码编写效率，规范测试代码结构。
-
-接口的测试代码结构：
-
-1、测试准备
-
-依赖数据准备
-	配置数据：可通过定义配置文件来初始化配置
-	业务数据：这里数据，禁止通过直接插入数据方式产生，而应通过调用业务服务产生。
-	
-依赖mock
-	对于外部依赖，需要对被依赖的服务进行mock，避免真实调用
-	
-接口测试入参准备
-	准备接口方面的入参。
-	
-2、测试执行
-
-调用接口方法，执行业务逻辑。
-
-3、测试校验
-
-	返回参数校验：检验接口的返回参数
-	DB：校验DB落地数据
-	缓存数据校验：校验落地到缓存中的数据
-	消息校验：校验对外发送的消息对象
-	对外HSF调用校验：校验对外HSF调用的入参。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><strong>接口测试的实践技巧</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">1、执行效率（需要关注的点）
-
-提高测试执行效率的建议方案：
-
-（1）最小化启动测试上下文，例如spring boot的应用，启动spring就可以了
-（2）使用内存数据库，例如h2
-（3）将中间件依赖mock掉
-
-2、测试框架选择
-
-建议选择基于testng，能够提供通过配置文件做数据准备的测试框架。如果找不到合适的，可以自己基于testng进行封装。
-
-3、接口测试覆盖度
-
-（1）基于业务场景和测试经验枚举出正常和异常情况
-（2）一些固定需要测试的点：幂等测试、边界值测试、参数不正确测试等等。
-
-同时，要通过覆盖率工具查看接口未覆盖的代码或分支逻辑，进行针对性的场景覆盖测试。分支完整性覆盖非常重要，特别是异常的分支。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h1 id="51Testing"><a href="#51Testing" class="headerlink" title="51Testing"></a>51Testing</h1><h2 id="如何编写好一条测试用例"><a href="#如何编写好一条测试用例" class="headerlink" title="如何编写好一条测试用例"></a>如何编写好一条测试用例</h2><p>1、编写测试用例的时间：需求评审、技术方案确定后，提测之前</p>
-<p>2、测试用例的好处：</p>
-<pre class="line-numbers language-none"><code class="language-none">1、任何测试人员都可以执行
-2、减少不必要的沟通成本，节省实际执行时间
-3、尽可能减少重复劳动
-4、归档（为后续的迭代、回归、回溯或交接等提供清晰的依据以及指导。）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>3、测试用例必要字段</p>
-<pre class="line-numbers language-none"><code class="language-none">1、用例名称：简洁且完整的说明该条用例的作用
-2、前置条件：执行用例需要做哪些前置步骤
-3、用例步骤或输入步骤（执行用例的每步操作）
-4、预期结果（明确、清晰、完整的描写相关的检查点，确保能明确判断用例是否通过）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>4、测试用例的扩展字段</p>
-<pre class="line-numbers language-none"><code class="language-none">1、用例编号：用例ID，一般命名方式为：需求编号+功能模块代号+测试类别+编号
-2、优先级：用例执行的优先级，一般将开发提测前自测的用例设置为最高级，一般为正常功能、主流程用例
-3、使用平台：测试平台，如安卓、iOS、PC、MAC等
-4、是否自动化
-5、关联需求：关联至该需求，便于回溯
-6、是否通过
-7、网络：测试环境的网络情况及相关参数
-8、备注：注明该用例需要注意的事项<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+Process finished <span class="token keyword">with</span> exit code <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -865,7 +562,7 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yixiaobaiio.github.io/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">https://yixiaobaiio.github.io/2021/04/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a>
+                    <a href="https://yixiaobaiio.github.io/2021/04/29/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">https://yixiaobaiio.github.io/2021/04/29/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1074,13 +771,13 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/04/29/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%BA%8C%EF%BC%89/">
+                <a href="/2021/04/29/python%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%AE%9E%E6%88%98(%E4%B8%80)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python面向对象（二）">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="python核心技术与实战（一）">
                         
-                        <span class="card-title">python面向对象（二）</span>
+                        <span class="card-title">python核心技术与实战（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1111,12 +808,13 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/24/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/">
+                <a href="/2021/04/29/python%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%AE%9E%E6%88%98%EF%BC%88%E4%BA%8C%EF%BC%89/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg" class="responsive-img" alt="软件测试理论基础">
                         
-                        <span class="card-title">软件测试理论基础</span>
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="python核心技术与实战（二）">
+                        
+                        <span class="card-title">python核心技术与实战（二）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1127,7 +825,7 @@ bug的统计分析：可以根据不同的属性对bug进行统计分析；如�
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
                             </span>
                         <span class="publish-author">
                             
