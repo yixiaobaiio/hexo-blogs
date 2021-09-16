@@ -1,5 +1,5 @@
 ---
-title: python基础（一）
+title: python核心技术与实战（一）
 date: 2021-04-29 14:40:25
 type: "_posts"
 layout: "posts"
