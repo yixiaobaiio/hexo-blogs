@@ -6,4 +6,4 @@ layout: "posts"
 ---
 # python入门
 
-![https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/Python_base1.png?raw=true]()
+![](https://github.com/yixiaobaiio/yixiaobaiio.github.io/blob/master/img/Python_base1.png?raw=true)
