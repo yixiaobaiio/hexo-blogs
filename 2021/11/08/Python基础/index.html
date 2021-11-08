@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="翼小白的博客">
+    <meta name="keywords" content="python入门, 翼小白的博客">
     <meta name="description" content="大学 | 程序猿">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>翼小白的博客</title>
+    <title>python入门 | 翼小白的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">python入门</h1>
                 </div>
             </div>
         </div>
@@ -467,26 +467,45 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h1><h2 id="标识符，变量名、函数名、类名统称"><a href="#标识符，变量名、函数名、类名统称" class="headerlink" title="标识符，变量名、函数名、类名统称"></a>标识符，变量名、函数名、类名统称</h2><h3 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h3><p>​    只能包含字母、数字、下划线，并且不能以数字开头</p>
-<p>​    不能与系统关键字、模块名相同</p>
-<p>​    系统关键字</p>
+                <h1 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h1><h2 id="标识符，变量名、函数名、类名统称"><a href="#标识符，变量名、函数名、类名统称" class="headerlink" title="标识符，变量名、函数名、类名统称"></a>标识符，变量名、函数名、类名统称</h2><h3 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h3><pre><code>只能包含字母、数字、下划线，并且不能以数字开头
+
+不能与系统关键字、模块名相同
+
+系统关键字
+</code></pre>
 <p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/1.jpg?raw=true"></p>
-<p>​    严格区分大小写</p>
-<p>​    尽量使用有意义的英文单词</p>
-<p>​        a = 20（无意义）</p>
-<p>​        age = 20</p>
-<p>​    多个单词之间使用下划线连接</p>
-<p>​        student_age = 20</p>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>​    声明：取个名字，给一个值（必须赋值；运算符左右两边加空格，提高代码可读性）</p>
-<p>​        var = &#39;abc&#39;</p>
-<p>​        var = 100</p>
-<p>​        var = 100.98</p>
-<p>​        var = True</p>
-<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><p>​    输入：input([&#39;message&#39;])</p>
-<p>​        接收外部输入，无论输入哪种数据类型的值，都统一作为字符串处理</p>
-<p>​        代码遇到input函数会暂停，直到敲入回车键后代码继续运行</p>
-<p>​        message为可选的参数，一般用于输入的提示</p>
-<p>​    输出：print(value1,value2,......sep=&#39; &#39;,end=&#39;\n&#39;,file=sys.stdout)</p>
+<pre><code>严格区分大小写
+
+尽量使用有意义的英文单词
+
+    a = 20（无意义）
+
+    age = 20
+
+多个单词之间使用下划线连接
+
+    student_age = 20
+</code></pre>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><pre><code>声明：取个名字，给一个值（必须赋值；运算符左右两边加空格，提高代码可读性）
+
+    var = \&#39;abc\&#39;
+
+    var = 100
+
+    var = 100.98
+
+    var = True
+</code></pre>
+<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><pre><code>输入：input(\[\&#39;message\&#39;\])
+
+    接收外部输入，无论输入哪种数据类型的值，都统一作为字符串处理
+
+    代码遇到input函数会暂停，直到敲入回车键后代码继续运行
+
+    message为可选的参数，一般用于输入的提示
+
+输出：print(value1,value2,\...\...sep=\&#39; \&#39;,end=\&#39;\\n\&#39;,file=sys.stdout)
+</code></pre>
 <p>​        value1,表示要输出的内容，可以同时输出多个对象，中间使用逗号隔开</p>
 <p>​        sep，在结果中多个对象值的分隔符，默认为空格</p>
 <p>​        end，表示输出完成后的结束符，默认为换行符（\n）</p>
@@ -709,108 +728,108 @@
 <p>end，结束位置，实际返回的是end-1位置上的元素，如果省略表示取到最后一个元素</p>
 <p>step，表示步长(每间隔多少元素取一个)，省略表示1</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/20.jpg?raw=true">{width=”4.166666666666667in” height=”1.5923118985126858in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/20.jpg?raw=true"></p>
 </blockquote>
 <p>非序列</p>
 <p>​    字典</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/21.jpg?raw=true">{width=”4.166666666666667in” height=”0.6278543307086614in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/21.jpg?raw=true"></p>
 </blockquote>
 <p>​    集合</p>
 <h3 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h3><h4 id="分支语句（if）"><a href="#分支语句（if）" class="headerlink" title="分支语句（if）"></a>分支语句（if）</h4><p>单分支</p>
 <p>描述了程序在布尔表达式结果为 True的情况下需要执行的操作</p>
 <p>语法：注意冒号和缩进（默认为4个空格）</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/22.jpg?raw=true">{width=”4.166666666666667in” height=”1.7302263779527558in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/22.jpg?raw=true"></p>
 </blockquote>
 <p>例1:输出学生的成绩，成绩&gt;=60，输出合格，否则输出不合格</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/23.jpg?raw=true">{width=”4.166666666666667in” height=”0.8173075240594926in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/23.jpg?raw=true"></p>
 </blockquote>
 <p>双分支</p>
 <p>描述了程序在布尔表达式结果为True或者False的情况下需要执行的操作</p>
 <p>语法：</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/24.jpg?raw=true">{width=”4.166666666666667in” height=”2.1260684601924758in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/24.jpg?raw=true"></p>
 </blockquote>
 <p>例2 判断奇偶数</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/25.jpg?raw=true">{width=”4.166666666666667in” height=”0.7133147419072616in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/25.jpg?raw=true"></p>
 </blockquote>
 <p>多分支</p>
 <p>描述了程序在不同的布尔表达式下分别需要进行的操作</p>
 <p>语法：</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/26.jpg?raw=true">{width=”4.166666666666667in” height=”3.176567147856518in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/26.jpg?raw=true"></p>
 </blockquote>
 <p>例3</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/27.jpg?raw=true">{width=”4.166666666666667in” height=”1.5801891951006124in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/27.jpg?raw=true"></p>
 </blockquote>
 <p>嵌套if语句</p>
 <p>例4</p>
 <blockquote>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/28.jpg?raw=true">{width=”4.166666666666667in” height=”1.4583333333333333in”}</p>
-<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/29.jpg?raw=true">{width=”4.166666666666667in” height=”1.197691382327209in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/28.jpg?raw=true"></p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/29.jpg?raw=true"></p>
 </blockquote>
 <h4 id="循环语句（while、for）"><a href="#循环语句（while、for）" class="headerlink" title="循环语句（while、for）"></a>循环语句（while、for）</h4><p>while语句</p>
 <p>描述了程序在指定条件成立的情况下重复完成某个操作</p>
 <p>语法：</p>
 <blockquote>
-<p><img src="media/rb8jyvctlvoxdua03czor.png">{width=”4.166666666666667in” height=”1.0919925634295713in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/30.jpg?raw=true"></p>
 </blockquote>
 <p>例1:输出0-9这10个数字</p>
 <blockquote>
-<p><img src="media/xx6dbwpj4u1nheeoct3zq.png">{width=”4.166666666666667in” height=”0.9540496500437445in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/31.jpg?raw=true"></p>
 </blockquote>
 <p>例2:计算1+2+3+...+10的和</p>
 <blockquote>
-<p><img src="media/t168ef86o99m7akf2xk8a.png">{width=”4.166666666666667in” height=”0.803082895888014in”}</p>
-<p><img src="media/vtldhhnxrfos5puth0dxc.png">{width=”4.166666666666667in” height=”1.2770428696412948in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/32.jpg?raw=true"></p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/33.jpg?raw=true"></p>
 </blockquote>
 <p>例3:循环次数未知，可以通过变量值的变化控制循环继续还是结束</p>
 <p>使用字典保存用户信息userinfo = {&#39;user1&#39;:[&#39;123456&#39;,&#39;张三&#39;],&#39;user2&#39;:[&#39;123456&#39;,&#39;李四&#39;]}，完成注册和登录功能</p>
 <p>注册，如果用户名已经存在，提示错误；如果密码不是6位数字，提示错误</p>
 <blockquote>
-<p><img src="media/umzn6iox0a5321n1m7x3m.png">{width=”4.166666666666667in” height=”1.0436286089238844in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/34.jpg?raw=true"></p>
 </blockquote>
 <p>for语句</p>
 <p>适用于循环次数确定的循环</p>
 <p>语法：</p>
 <blockquote>
-<p><img src="media/brk59jvxkob2788pdqt15o.png">{width=”4.166666666666667in” height=”0.672843394575678in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/35.jpg?raw=true"></p>
 </blockquote>
 <p>i，变量，可以不声明，在循环内部可以直接使用该变量的值</p>
 <p>range(start,end)，生成【start，end】范围内的数字序列</p>
 <p>例1:输出0-9这10个数字</p>
 <blockquote>
-<p><img src="media/sc10ir39tiby6bq8sjfwo.png">{width=”4.166666666666667in” height=”0.8526541994750656in”}</p>
-<p><img src="media/v61mb0rvmflba2hyyd3xs.png">{width=”4.166666666666667in” height=”0.5731517935258092in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/36.jpg?raw=true"></p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/37.jpg?raw=true"></p>
 </blockquote>
 <p>例2:输入1个正整数n，计算1+2+...+n的和，如果n=1，和为1</p>
 <blockquote>
-<p><img src="media/sgpvk6rfdmw8khkxb03q.png">{width=”4.166666666666667in” height=”1.7791294838145233in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/38.jpg?raw=true"></p>
 </blockquote>
 <p>例3:将字符串s=&#39;qw$^e&amp;sASd1*23(&#39;中的特殊符号去掉</p>
 <blockquote>
-<p><img src="media/nh2rdopzj2mbt7k5jsxhes.png">{width=”4.166666666666667in” height=”0.5642782152230971in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/39.jpg?raw=true">{width=”4.166666666666667in” height=”0.5642782152230971in”}</p>
 </blockquote>
 <p>例4:嵌套for循环，打印5行5列*</p>
 <blockquote>
-<p><img src="media/rzjn73n0h1k184htjlop8w.png">{width=”4.166666666666667in” height=”0.557244094488189in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/40.jpg?raw=true">{width=”4.166666666666667in” height=”0.557244094488189in”}</p>
 </blockquote>
 <p>例5:打印九九乘法表</p>
 <blockquote>
-<p><img src="media/tw8lsgbc9ekwqdchyh9hr.png">{width=”4.166666666666667in” height=”0.5224912510936133in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/41.jpg?raw=true">{width=”4.166666666666667in” height=”0.5224912510936133in”}</p>
 </blockquote>
 <h4 id="循环控制语句"><a href="#循环控制语句" class="headerlink" title="循环控制语句"></a>循环控制语句</h4><p>continue,结束当前循环，开始下一次新的循环</p>
 <p>break，终止循环</p>
 <blockquote>
-<p><img src="media/44ivkpkdmujuuxcqjksx8l.png">{width=”4.166666666666667in” height=”0.7757294400699912in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/42.jpg?raw=true">{width=”4.166666666666667in” height=”0.7757294400699912in”}</p>
 </blockquote>
 <h2 id="函数（重要）"><a href="#函数（重要）" class="headerlink" title="函数（重要）"></a>函数（重要）</h2><p>声明：</p>
 <blockquote>
-<p><img src="media/nj1u8gapxatzm58ifumvd.png">{width=”4.166666666666667in” height=”1.2190682414698162in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/43.jpg?raw=true">{width=”4.166666666666667in” height=”1.2190682414698162in”}</p>
 </blockquote>
 <p>函数名：必须符合标识符命名规范</p>
 <p>参数：也叫形参，可选，可以有多个。在函数内部可以直接使用形参</p>
@@ -819,41 +838,41 @@
 <p>参数：也叫实参，根据形参传入实参</p>
 <p>例1:无参无返回值</p>
 <blockquote>
-<p><img src="media/0k7kfiddt1c7mcfe64k85o.png">{width=”4.166666666666667in” height=”0.31559930008748904in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/44.jpg?raw=true">{width=”4.166666666666667in” height=”0.31559930008748904in”}</p>
 </blockquote>
 <p>例2:多个参数与多个返回值</p>
 <blockquote>
-<p><img src="media/q6zz4cuhioppfccmkyo84h.png">{width=”4.166666666666667in” height=”0.7960083114610673in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/45.jpg?raw=true">{width=”4.166666666666667in” height=”0.7960083114610673in”}</p>
 </blockquote>
 <h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><h4 id="形参"><a href="#形参" class="headerlink" title="形参"></a>形参</h4><p>必须参数（位置参数）</p>
 <p>要求在调用时必须严格按照形参的数量、顺序、数据类型传入实参</p>
 <blockquote>
-<p><img src="media/b2jr7xequo49hyfsjqw2m7.png">{width=”4.166666666666667in” height=”0.5644094488188977in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/46.jpg?raw=true">{width=”4.166666666666667in” height=”0.5644094488188977in”}</p>
 </blockquote>
 <p>默认参数</p>
 <p>在声明函数时通过键值对（key=value）的形式指定形参的值，指定了以后在调用函数时可以不为该参数传值（此时使用默认值），如果传入则使用实际传入的值</p>
 <p>默认参数必须放在位置参数后面</p>
 <blockquote>
-<p><img src="media/vv4sdtuqpdjtaa5d1lvl5i.png">{width=”4.166666666666667in” height=”0.7123239282589676in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/47.jpg?raw=true">{width=”4.166666666666667in” height=”0.7123239282589676in”}</p>
 </blockquote>
 <p>可变参数</p>
 <p>*args，接收若干的位置参数，将传入的值封包一个元组args中</p>
 <blockquote>
-<p><img src="media/p2fcswni82c648idsoax6d.png">{width=”4.166666666666667in” height=”0.6301826334208224in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/48.jpg?raw=true">{width=”4.166666666666667in” height=”0.6301826334208224in”}</p>
 </blockquote>
 <p>**kwargs，接收若干的关键字参数，将传入的值封包一个字典kwargs中</p>
 <blockquote>
-<p><img src="media/zn5dp0ay4tioplwnsfl1p.png">{width=”4.166666666666667in” height=”0.5736132983377078in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/49.jpg?raw=true">{width=”4.166666666666667in” height=”0.5736132983377078in”}</p>
 </blockquote>
 <h4 id="实参"><a href="#实参" class="headerlink" title="实参"></a>实参</h4><p>位置参数，根据形参的数量、顺序、数据类型传入实参</p>
 <p>关键字参数（指定参数）</p>
 <p>在调用函数时，通过键值对（key=value）形式指定将实参传给某个形参，此时可以不用再关心参数顺序</p>
 <blockquote>
-<p><img src="media/2foithb0c3b5ghbbjky25s.png">{width=”4.166666666666667in” height=”0.7266546369203849in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/50.jpg?raw=true">{width=”4.166666666666667in” height=”0.7266546369203849in”}</p>
 </blockquote>
 <p>练习</p>
 <blockquote>
-<p><img src="media/r410oj8tzreige6sq5517.png">{width=”4.166666666666667in” height=”1.3433759842519686in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/51.jpg?raw=true">{width=”4.166666666666667in” height=”1.3433759842519686in”}</p>
 </blockquote>
 <h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><h4 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h4><p>在函数内部声明的变量，只能在函数内部使用</p>
 <h4 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h4><p>在函数外部声明的变量，可以在函数的内部使用，也可以在函数外部使用</p>
@@ -861,26 +880,26 @@
 <p>在函数内部如果需要修改全局变量（不可变数据类型），需要使用global声明变量</p>
 <p>如果全局变量为可变数据类型，在函数内部可以任意操作该全局变量，不需要使用global声明</p>
 <blockquote>
-<p><img src="media/4y2lsp70vkre176jnhmoxp.png">{width=”4.166666666666667in” height=”1.1883136482939634in”}</p>
-<p><img src="media/aj3wn8pggn9hje972dw47r.png">{width=”4.166666666666667in” height=”0.8601881014873141in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/52.jpg?raw=true">{width=”4.166666666666667in” height=”1.1883136482939634in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/53.jpg?raw=true">{width=”4.166666666666667in” height=”0.8601881014873141in”}</p>
 </blockquote>
 <h3 id="函数递归"><a href="#函数递归" class="headerlink" title="函数递归"></a>函数递归</h3><p>在函数内部return返回函数本身</p>
 <p>注意</p>
 <p>递归需要向已知的方向进行</p>
 <p>递归层数一般不超过1000层</p>
 <blockquote>
-<p><img src="media/oa6mc9aivuckgsog4ei6h.png">{width=”4.166666666666667in” height=”0.8414326334208224in”}</p>
-<p><img src="media/08m71ix3ej0wkm4nldah2vp.png">{width=”4.166666666666667in” height=”0.9002055993000875in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/54.jpg?raw=true">{width=”4.166666666666667in” height=”0.8414326334208224in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/55.jpg?raw=true">{width=”4.166666666666667in” height=”0.9002055993000875in”}</p>
 </blockquote>
 <h3 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h3><p>应用场景：不会重复调用的函数</p>
 <p>语法：lambda[参数1，......]:返回值</p>
 <p>必须，并且只能有一个返回值</p>
 <blockquote>
-<p><img src="media/4j2u47dlu0r50ovfmyhg2f.png">{width=”4.166666666666667in” height=”0.8464227909011374in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/56.jpg?raw=true">{width=”4.166666666666667in” height=”0.8464227909011374in”}</p>
 </blockquote>
 <p>例：排序，通过匿名函数指定用于排序的key</p>
 <blockquote>
-<p><img src="media/f5ta41o4mcqydvmt8lcr.png">{width=”4.166666666666667in” height=”1.1776082677165354in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/57.jpg?raw=true">{width=”4.166666666666667in” height=”1.1776082677165354in”}</p>
 </blockquote>
 <h2 id="模块与包"><a href="#模块与包" class="headerlink" title="模块与包"></a>模块与包</h2><p>自定义模块，py文件即为一个模块</p>
 <p>包，存在一个<strong>__init</strong>__.py文件的目录，在包中可以有若干的模块</p>
@@ -888,21 +907,21 @@
 <p>import 模块名/包名.模块名</p>
 <p>导入一个模块，使用时通过模块名.成员名引用模块下的指定内容</p>
 <blockquote>
-<p><img src="media/qcm93x44es9x3sucq8x0a.png">{width=”4.166666666666667in” height=”0.36897747156605426in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/58.jpg?raw=true">{width=”4.166666666666667in” height=”0.36897747156605426in”}</p>
 </blockquote>
 <p>from 模块名/包名 import 成员1，成员2，......</p>
 <blockquote>
-<p><img src="media/72j7f5qott50a9swoxizupi.png">{width=”4.166666666666667in” height=”0.8817202537182852in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/59.jpg?raw=true">{width=”4.166666666666667in” height=”0.8817202537182852in”}</p>
 </blockquote>
 <p>from 模块名.包名 import *</p>
 <p>导入模块下的所有成员</p>
 <p>as，可以为导入的模块或者成员取别名，使用时通过别名引用即可</p>
 <blockquote>
-<p><img src="media/nca46gqh37am4pdt8pu3n.png">{width=”4.166666666666667in” height=”0.4782403762029746in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/60.jpg?raw=true">{width=”4.166666666666667in” height=”0.4782403762029746in”}</p>
 </blockquote>
 <h4 id="常用模块"><a href="#常用模块" class="headerlink" title="常用模块"></a>常用模块</h4><p>time</p>
 <blockquote>
-<p><img src="media/i68dnlokxptcatl1l38m9.png">{width=”4.166666666666667in” height=”0.358669072615923in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/61.jpg?raw=true">{width=”4.166666666666667in” height=”0.358669072615923in”}</p>
 </blockquote>
 <p>time.time()，返回1970年1月1日到当前的秒数</p>
 <p>time.localtime()，返回本地日期信息</p>
@@ -914,7 +933,7 @@
 <p>sys</p>
 <p>sys.path，以列表返回python系统的环境变量</p>
 <blockquote>
-<p><img src="media/9xn3lcobg4af9nyuvrfk3f.png">{width=”4.166666666666667in” height=”0.38777340332458443in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/62.jpg?raw=true">{width=”4.166666666666667in” height=”0.38777340332458443in”}</p>
 </blockquote>
 <p>os</p>
 <p>os.system(命令)，执行系统命令</p>
@@ -929,11 +948,11 @@
 <p>os.path.dirname(<strong>__file__</strong>)，返回当前文件所在目录名称</p>
 <p>os.path.join(path1,path2)，将两个对象拼接成一个路径</p>
 <blockquote>
-<p><img src="media/iqmk231zaires3fsm6f7.png">{width=”4.166666666666667in” height=”1.6807261592300962in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/63.jpg?raw=true">{width=”4.166666666666667in” height=”1.6807261592300962in”}</p>
 </blockquote>
 <p>例1:输入1个目录路径，统计出该目录下有多少个文件和目录</p>
 <blockquote>
-<p><img src="media/ut698ea675b6k8pcpq0e6.png">{width=”4.166666666666667in” height=”1.4678433945756781in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/64.jpg?raw=true">{width=”4.166666666666667in” height=”1.4678433945756781in”}</p>
 </blockquote>
 <p>安装第三方模块</p>
 <p>pycharm安装：Preferences---&gt;Project Interpreter----&gt;&quot;+&quot;----&gt;搜索要安装的包</p>
@@ -969,18 +988,18 @@
 <p>cell_values(row,col)，返回指定单元格的数据</p>
 <p>例</p>
 <blockquote>
-<p><img src="media/ql65yg464kjaagi20ttsr.png">{width=”4.166666666666667in” height=”2.912706692913386in”}</p>
-<p><img src="media/81yieg3h1axet5ocngbe0b.png">{width=”4.166666666666667in” height=”0.9751771653543307in”}</p>
-<p><img src="media/8z5ig6fslpxkbguyooe16g.png">{width=”4.166666666666667in” height=”1.229942038495188in”}</p>
-<p><img src="media/2upww8a15ztpjyqz7kdo5l.png">{width=”4.166666666666667in” height=”3.0560520559930007in”}</p>
-<p><img src="media/kq2zt6i0tlzksqqzqs0u.png">{width=”4.166666666666667in” height=”2.922001312335958in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/65.jpg?raw=true">{width=”4.166666666666667in” height=”2.912706692913386in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/66.jpg?raw=true">{width=”4.166666666666667in” height=”0.9751771653543307in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/67.jpg?raw=true">{width=”4.166666666666667in” height=”1.229942038495188in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/68.jpg?raw=true">{width=”4.166666666666667in” height=”3.0560520559930007in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/69.jpg?raw=true">{width=”4.166666666666667in” height=”2.922001312335958in”}</p>
 </blockquote>
 <h3 id="csv"><a href="#csv" class="headerlink" title="csv"></a>csv</h3><p>模块：csv</p>
 <p>使用步骤：</p>
 <p>打开文件（open）</p>
 <p>读取文件内容（csv.reader()）</p>
 <blockquote>
-<p><img src="media/jkuav60g67jcaqp6ywn2b.png">{width=”4.166666666666667in” height=”1.3182436570428697in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/70.jpg?raw=true">{width=”4.166666666666667in” height=”1.3182436570428697in”}</p>
 </blockquote>
 <h3 id="文本文件"><a href="#文本文件" class="headerlink" title="文本文件"></a>文本文件</h3><p>打开文件</p>
 <p>语法：open(file[,mode=type,encoding=编码])，打开指定文件，返回一个文件对象</p>
@@ -993,7 +1012,7 @@
 <p>encoding，指定编码，（如果打开文件提示编码错误，再加上encoding参数即可）</p>
 <p>例1</p>
 <blockquote>
-<p><img src="media/3rd4tldjgo82ujfkghgv7.png">{width=”4.166666666666667in” height=”2.39501312335958in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/71.jpg?raw=true">{width=”4.166666666666667in” height=”2.39501312335958in”}</p>
 </blockquote>
 <p>常用方法</p>
 <p>closed，检查文件是否为关闭状态，如果是返回True，否则返回False</p>
@@ -1002,42 +1021,42 @@
 <p>注意：文件打开后需要关闭</p>
 <p>例2</p>
 <blockquote>
-<p><img src="media/9i6t29d9kwgydcs6s7gr3.png">{width=”4.166666666666667in” height=”2.6608070866141733in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/72.jpg?raw=true">{width=”4.166666666666667in” height=”2.6608070866141733in”}</p>
 </blockquote>
 <p>读文件</p>
 <p>read（），将文件的所有内容读处理，保存在字符串中</p>
 <p>readline()，读取文件中的一行，保存在字符串中</p>
 <p>readlines（），将文件中所有内容读取出来，保存在列表中，文件中的每一行为列表中的一个元素</p>
 <blockquote>
-<p><img src="media/ap505yfl3jl3qdvynsj04f.png">{width=”4.166666666666667in” height=”2.424317585301837in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/73.jpg?raw=true">{width=”4.166666666666667in” height=”2.424317585301837in”}</p>
 </blockquote>
 <p>写文件</p>
 <p>write(s)，将一个字符串写入文件</p>
 <p>writelines(iter)，将一个可迭代对象的所有元素写入文件</p>
 <blockquote>
-<p><img src="media/7zfbmh9vffe7y8k80uob1a.png">{width=”4.166666666666667in” height=”1.8027963692038496in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/74.jpg?raw=true">{width=”4.166666666666667in” height=”1.8027963692038496in”}</p>
 </blockquote>
 <p>例：</p>
 <p>有一个文件保存学生的成绩信息，计算出每个学生的总成绩</p>
 <blockquote>
-<p><img src="media/qt40vp3iihknd2t7uz51l.png">{width=”4.166666666666667in” height=”1.3387489063867017in”}</p>
-<p><img src="media/2xtwjfor0u52tkssk36l28.png">{width=”4.166666666666667in” height=”2.4358431758530186in”}</p>
-<p><img src="media/ggv6wgrq7wcn85z00vn39.png">{width=”4.166666666666667in” height=”0.8931813210848644in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/75.jpg?raw=true">{width=”4.166666666666667in” height=”1.3387489063867017in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/76.jpg?raw=true">{width=”4.166666666666667in” height=”2.4358431758530186in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/77.jpg?raw=true">{width=”4.166666666666667in” height=”0.8931813210848644in”}</p>
 </blockquote>
 <h3 id="with语句"><a href="#with语句" class="headerlink" title="with语句"></a>with语句</h3><p>管理上下文，可以实现打开文件后自动关闭</p>
 <p>语法:with open(file) as f:</p>
 <blockquote>
-<p><img src="media/mm9sqdy27xqwm5q2tdgd3.png">{width=”4.166666666666667in” height=”1.6508759842519685in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/78.jpg?raw=true">{width=”4.166666666666667in” height=”1.6508759842519685in”}</p>
 </blockquote>
 <p>练习</p>
 <p>例1：一个目录users，users中使用文件保存用户信息（每个用户一个文件，文件名为账号），文件中包含三行内容，分别是密码、姓名、账号余额，格式如下：</p>
 <blockquote>
-<p><img src="media/2sp89hinsei9ptbgzpd0rl.png">{width=”3.0208333333333335in” height=”1.0520833333333333in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/79.jpg?raw=true">{width=”3.0208333333333335in” height=”1.0520833333333333in”}</p>
 </blockquote>
 <p>例2：实现系统的登录、注册功能</p>
 <h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><p>语法：</p>
 <blockquote>
-<p><img src="media/ju19wbefzbila12egl1cdp.png">{width=”3.0625in” height=”4.163225065616798in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/80.jpg?raw=true">{width=”3.0625in” height=”4.163225065616798in”}</p>
 </blockquote>
 <p>try</p>
 <p>将有可能引发异常的语句放在try中</p>
@@ -1045,31 +1064,31 @@
 <p>捕获异常，并且针对该异常进行相应的处理，可以同时存在多个except语句</p>
 <p>except 异常，捕获1个指定异常</p>
 <blockquote>
-<p><img src="media/p7xpadfadf4e90kcuxfc5.png">{width=”4.166666666666667in” height=”2.7285181539807524in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/81.jpg?raw=true">{width=”4.166666666666667in” height=”2.7285181539807524in”}</p>
 </blockquote>
 <p>except (异常1，异常2，.….)，捕获元组中的异常</p>
 <blockquote>
-<p><img src="media/r5lxon2olboa605wzt4sih.png">{width=”4.166666666666667in” height=”2.828021653543307in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/82.jpg?raw=true">{width=”4.166666666666667in” height=”2.828021653543307in”}</p>
 </blockquote>
 <p>except Exception，捕获所有的异常</p>
 <blockquote>
-<p><img src="media/6sllhe7jr4szblmfqpaltm.png">{width=”4.166666666666667in” height=”2.953678915135608in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/83.jpg?raw=true">{width=”4.166666666666667in” height=”2.953678915135608in”}</p>
 </blockquote>
 <p>else</p>
 <p>如果try中的语句没有引发异常，则执行else后的代码</p>
 <blockquote>
-<p><img src="media/xbh8xywwlrhs3gzm49rq6.png">{width=”4.166666666666667in” height=”2.764896106736658in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/84.jpg?raw=true">{width=”4.166666666666667in” height=”2.764896106736658in”}</p>
 </blockquote>
 <p>finally</p>
 <p>无论是否引发异常，finally的代码段都会执行</p>
 <blockquote>
-<p><img src="media/looywvlb5ba5od0vpmdl6n.png">{width=”4.166666666666667in” height=”2.8982360017497815in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/85.jpg?raw=true">{width=”4.166666666666667in” height=”2.8982360017497815in”}</p>
 </blockquote>
 <p>raise</p>
 <p>主动抛出异常</p>
 <blockquote>
-<p><img src="media/ggh1shgq1giohhn37gdg9n.png">{width=”4.166666666666667in” height=”3.451123140857393in”}</p>
-<p><img src="media/cdvgg5lc0onoysrutrk2jo.png">{width=”4.166666666666667in” height=”2.27in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/86.jpg?raw=true">{width=”4.166666666666667in” height=”3.451123140857393in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/87.jpg?raw=true">{width=”4.166666666666667in” height=”2.27in”}</p>
 </blockquote>
 <h2 id="数据库操作（重要）"><a href="#数据库操作（重要）" class="headerlink" title="数据库操作（重要）"></a>数据库操作（重要）</h2><p>模块：pymysql</p>
 <p>pip install pymysql</p>
@@ -1100,8 +1119,8 @@
 <p>cur.close()</p>
 <p>con.close()</p>
 <blockquote>
-<p><img src="media/xks94clzj20cgzi48o7az7.png">{width=”4.166666666666667in” height=”1.537671697287839in”}</p>
-<p><img src="media/jwm1d9cmfzqfk3ehcswhxn.png">{width=”4.166666666666667in” height=”2.944983595800525in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/88.jpg?raw=true">{width=”4.166666666666667in” height=”1.537671697287839in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/89.jpg?raw=true">{width=”4.166666666666667in” height=”2.944983595800525in”}</p>
 </blockquote>
 
                 
@@ -1342,10 +1361,9 @@
                 <a href="/2021/11/08/Python%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
+                        <img src="https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg" class="responsive-img" alt="python入门">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">python入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
