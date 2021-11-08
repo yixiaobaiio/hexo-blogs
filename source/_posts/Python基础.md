@@ -1,52 +1,58 @@
+---
+title: python入门
+type: "_posts"
+layout: "posts"
+img: "https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg"
+---
 # Python基础
 
 ## 标识符，变量名、函数名、类名统称
 
 ### 命名规范
 
-​	只能包含字母、数字、下划线，并且不能以数字开头
-
-​	不能与系统关键字、模块名相同
-
-​	系统关键字
+	只能包含字母、数字、下划线，并且不能以数字开头
+	
+	不能与系统关键字、模块名相同
+	
+	系统关键字
 
 ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/1.jpg?raw=true)
 
-​	严格区分大小写
-
-​	尽量使用有意义的英文单词
-
-​		a = 20（无意义）
-
-​		age = 20
-
-​	多个单词之间使用下划线连接
-
-​		student_age = 20
+	严格区分大小写
+	
+	尽量使用有意义的英文单词
+	
+		a = 20（无意义）
+	
+		age = 20
+	
+	多个单词之间使用下划线连接
+	
+		student_age = 20
 
 ### 变量
 
-​	声明：取个名字，给一个值（必须赋值；运算符左右两边加空格，提高代码可读性）
-
-​		var = \'abc\'
-
-​		var = 100
-
-​		var = 100.98
-
-​		var = True
+	声明：取个名字，给一个值（必须赋值；运算符左右两边加空格，提高代码可读性）
+	
+		var = \'abc\'
+	
+		var = 100
+	
+		var = 100.98
+	
+		var = True
 
 ### 输入输出
 
-​	输入：input(\[\'message\'\])
-
-​		接收外部输入，无论输入哪种数据类型的值，都统一作为字符串处理
-
-​		代码遇到input函数会暂停，直到敲入回车键后代码继续运行
-
-​		message为可选的参数，一般用于输入的提示
-
-​	输出：print(value1,value2,\...\...sep=\' \',end=\'\\n\',file=sys.stdout)
+	输入：input(\[\'message\'\])
+	
+		接收外部输入，无论输入哪种数据类型的值，都统一作为字符串处理
+	
+		代码遇到input函数会暂停，直到敲入回车键后代码继续运行
+	
+		message为可选的参数，一般用于输入的提示
+	
+	输出：print(value1,value2,\...\...sep=\' \',end=\'\\n\',file=sys.stdout)
 
 ​		value1,表示要输出的内容，可以同时输出多个对象，中间使用逗号隔开
 
@@ -502,13 +508,13 @@ end，结束位置，实际返回的是end-1位置上的元素，如果省略表
 
 step，表示步长(每间隔多少元素取一个)，省略表示1
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/20.jpg?raw=true){width="4.166666666666667in" height="1.5923118985126858in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/20.jpg?raw=true)
 
 非序列
 
 ​	字典
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/21.jpg?raw=true){width="4.166666666666667in" height="0.6278543307086614in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/21.jpg?raw=true)
 
 ​	集合
 
@@ -522,11 +528,11 @@ step，表示步长(每间隔多少元素取一个)，省略表示1
 
 语法：注意冒号和缩进（默认为4个空格）
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/22.jpg?raw=true){width="4.166666666666667in" height="1.7302263779527558in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/22.jpg?raw=true)
 
 例1:输出学生的成绩，成绩>=60，输出合格，否则输出不合格
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/23.jpg?raw=true){width="4.166666666666667in" height="0.8173075240594926in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/23.jpg?raw=true)
 
 双分支
 
@@ -534,11 +540,11 @@ step，表示步长(每间隔多少元素取一个)，省略表示1
 
 语法：
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/24.jpg?raw=true){width="4.166666666666667in" height="2.1260684601924758in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/24.jpg?raw=true)
 
 例2 判断奇偶数
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/25.jpg?raw=true){width="4.166666666666667in" height="0.7133147419072616in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/25.jpg?raw=true)
 
 多分支
 
@@ -546,19 +552,19 @@ step，表示步长(每间隔多少元素取一个)，省略表示1
 
 语法：
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/26.jpg?raw=true){width="4.166666666666667in" height="3.176567147856518in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/26.jpg?raw=true)
 
 例3
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/27.jpg?raw=true){width="4.166666666666667in" height="1.5801891951006124in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/27.jpg?raw=true)
 
 嵌套if语句
 
 例4
 
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/28.jpg?raw=true){width="4.166666666666667in" height="1.4583333333333333in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/28.jpg?raw=true)
 >
-> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/29.jpg?raw=true){width="4.166666666666667in" height="1.197691382327209in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/29.jpg?raw=true)
 
 #### 循环语句（while、for）
 
@@ -568,17 +574,17 @@ while语句
 
 语法：
 
-> ![](media/rb8jyvctlvoxdua03czor.png){width="4.166666666666667in" height="1.0919925634295713in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/30.jpg?raw=true)
 
 例1:输出0-9这10个数字
 
-> ![](media/xx6dbwpj4u1nheeoct3zq.png){width="4.166666666666667in" height="0.9540496500437445in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/31.jpg?raw=true)
 
 例2:计算1+2+3+\...+10的和
 
-> ![](media/t168ef86o99m7akf2xk8a.png){width="4.166666666666667in" height="0.803082895888014in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/32.jpg?raw=true)
 >
-> ![](media/vtldhhnxrfos5puth0dxc.png){width="4.166666666666667in" height="1.2770428696412948in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/33.jpg?raw=true)
 
 例3:循环次数未知，可以通过变量值的变化控制循环继续还是结束
 
@@ -586,7 +592,7 @@ while语句
 
 注册，如果用户名已经存在，提示错误；如果密码不是6位数字，提示错误
 
-> ![](media/umzn6iox0a5321n1m7x3m.png){width="4.166666666666667in" height="1.0436286089238844in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/34.jpg?raw=true)
 
 for语句
 
@@ -594,7 +600,7 @@ for语句
 
 语法：
 
-> ![](media/brk59jvxkob2788pdqt15o.png){width="4.166666666666667in" height="0.672843394575678in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/35.jpg?raw=true)
 
 i，变量，可以不声明，在循环内部可以直接使用该变量的值
 
@@ -602,25 +608,25 @@ range(start,end)，生成【start，end】范围内的数字序列
 
 例1:输出0-9这10个数字
 
-> ![](media/sc10ir39tiby6bq8sjfwo.png){width="4.166666666666667in" height="0.8526541994750656in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/36.jpg?raw=true)
 >
-> ![](media/v61mb0rvmflba2hyyd3xs.png){width="4.166666666666667in" height="0.5731517935258092in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/37.jpg?raw=true)
 
 例2:输入1个正整数n，计算1+2+\...+n的和，如果n=1，和为1
 
-> ![](media/sgpvk6rfdmw8khkxb03q.png){width="4.166666666666667in" height="1.7791294838145233in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/38.jpg?raw=true)
 
 例3:将字符串s=\'qw\$\^e&sASd1\*23(\'中的特殊符号去掉
 
-> ![](media/nh2rdopzj2mbt7k5jsxhes.png){width="4.166666666666667in" height="0.5642782152230971in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/39.jpg?raw=true){width="4.166666666666667in" height="0.5642782152230971in"}
 
 例4:嵌套for循环，打印5行5列\*
 
-> ![](media/rzjn73n0h1k184htjlop8w.png){width="4.166666666666667in" height="0.557244094488189in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/40.jpg?raw=true){width="4.166666666666667in" height="0.557244094488189in"}
 
 例5:打印九九乘法表
 
-> ![](media/tw8lsgbc9ekwqdchyh9hr.png){width="4.166666666666667in" height="0.5224912510936133in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/41.jpg?raw=true){width="4.166666666666667in" height="0.5224912510936133in"}
 
 #### 循环控制语句
 
@@ -628,13 +634,13 @@ continue,结束当前循环，开始下一次新的循环
 
 break，终止循环
 
-> ![](media/44ivkpkdmujuuxcqjksx8l.png){width="4.166666666666667in" height="0.7757294400699912in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/42.jpg?raw=true){width="4.166666666666667in" height="0.7757294400699912in"}
 
 ## 函数（重要）
 
 声明：
 
-> ![](media/nj1u8gapxatzm58ifumvd.png){width="4.166666666666667in" height="1.2190682414698162in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/43.jpg?raw=true){width="4.166666666666667in" height="1.2190682414698162in"}
 
 函数名：必须符合标识符命名规范
 
@@ -648,11 +654,11 @@ break，终止循环
 
 例1:无参无返回值
 
-> ![](media/0k7kfiddt1c7mcfe64k85o.png){width="4.166666666666667in" height="0.31559930008748904in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/44.jpg?raw=true){width="4.166666666666667in" height="0.31559930008748904in"}
 
 例2:多个参数与多个返回值
 
-> ![](media/q6zz4cuhioppfccmkyo84h.png){width="4.166666666666667in" height="0.7960083114610673in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/45.jpg?raw=true){width="4.166666666666667in" height="0.7960083114610673in"}
 
 ### 参数
 
@@ -662,7 +668,7 @@ break，终止循环
 
 要求在调用时必须严格按照形参的数量、顺序、数据类型传入实参
 
-> ![](media/b2jr7xequo49hyfsjqw2m7.png){width="4.166666666666667in" height="0.5644094488188977in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/46.jpg?raw=true){width="4.166666666666667in" height="0.5644094488188977in"}
 
 默认参数
 
@@ -670,17 +676,17 @@ break，终止循环
 
 默认参数必须放在位置参数后面
 
-> ![](media/vv4sdtuqpdjtaa5d1lvl5i.png){width="4.166666666666667in" height="0.7123239282589676in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/47.jpg?raw=true){width="4.166666666666667in" height="0.7123239282589676in"}
 
 可变参数
 
 \*args，接收若干的位置参数，将传入的值封包一个元组args中
 
-> ![](media/p2fcswni82c648idsoax6d.png){width="4.166666666666667in" height="0.6301826334208224in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/48.jpg?raw=true){width="4.166666666666667in" height="0.6301826334208224in"}
 
 \*\*kwargs，接收若干的关键字参数，将传入的值封包一个字典kwargs中
 
-> ![](media/zn5dp0ay4tioplwnsfl1p.png){width="4.166666666666667in" height="0.5736132983377078in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/49.jpg?raw=true){width="4.166666666666667in" height="0.5736132983377078in"}
 
 #### 实参
 
@@ -690,11 +696,11 @@ break，终止循环
 
 在调用函数时，通过键值对（key=value）形式指定将实参传给某个形参，此时可以不用再关心参数顺序
 
-> ![](media/2foithb0c3b5ghbbjky25s.png){width="4.166666666666667in" height="0.7266546369203849in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/50.jpg?raw=true){width="4.166666666666667in" height="0.7266546369203849in"}
 
 练习
 
-> ![](media/r410oj8tzreige6sq5517.png){width="4.166666666666667in" height="1.3433759842519686in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/51.jpg?raw=true){width="4.166666666666667in" height="1.3433759842519686in"}
 
 ### 变量作用域
 
@@ -712,9 +718,9 @@ global
 
 如果全局变量为可变数据类型，在函数内部可以任意操作该全局变量，不需要使用global声明
 
-> ![](media/4y2lsp70vkre176jnhmoxp.png){width="4.166666666666667in" height="1.1883136482939634in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/52.jpg?raw=true){width="4.166666666666667in" height="1.1883136482939634in"}
 >
-> ![](media/aj3wn8pggn9hje972dw47r.png){width="4.166666666666667in" height="0.8601881014873141in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/53.jpg?raw=true){width="4.166666666666667in" height="0.8601881014873141in"}
 
 ### 函数递归
 
@@ -726,9 +732,9 @@ global
 
 递归层数一般不超过1000层
 
-> ![](media/oa6mc9aivuckgsog4ei6h.png){width="4.166666666666667in" height="0.8414326334208224in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/54.jpg?raw=true){width="4.166666666666667in" height="0.8414326334208224in"}
 >
-> ![](media/08m71ix3ej0wkm4nldah2vp.png){width="4.166666666666667in" height="0.9002055993000875in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/55.jpg?raw=true){width="4.166666666666667in" height="0.9002055993000875in"}
 
 ### 匿名函数
 
@@ -738,11 +744,11 @@ global
 
 必须，并且只能有一个返回值
 
-> ![](media/4j2u47dlu0r50ovfmyhg2f.png){width="4.166666666666667in" height="0.8464227909011374in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/56.jpg?raw=true){width="4.166666666666667in" height="0.8464227909011374in"}
 
 例：排序，通过匿名函数指定用于排序的key
 
-> ![](media/f5ta41o4mcqydvmt8lcr.png){width="4.166666666666667in" height="1.1776082677165354in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/57.jpg?raw=true){width="4.166666666666667in" height="1.1776082677165354in"}
 
 ## 模块与包
 
@@ -756,11 +762,11 @@ import 模块名/包名.模块名
 
 导入一个模块，使用时通过模块名.成员名引用模块下的指定内容
 
-> ![](media/qcm93x44es9x3sucq8x0a.png){width="4.166666666666667in" height="0.36897747156605426in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/58.jpg?raw=true){width="4.166666666666667in" height="0.36897747156605426in"}
 
 from 模块名/包名 import 成员1，成员2，\...\...
 
-> ![](media/72j7f5qott50a9swoxizupi.png){width="4.166666666666667in" height="0.8817202537182852in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/59.jpg?raw=true){width="4.166666666666667in" height="0.8817202537182852in"}
 
 from 模块名.包名 import \*
 
@@ -768,13 +774,13 @@ from 模块名.包名 import \*
 
 as，可以为导入的模块或者成员取别名，使用时通过别名引用即可
 
-> ![](media/nca46gqh37am4pdt8pu3n.png){width="4.166666666666667in" height="0.4782403762029746in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/60.jpg?raw=true){width="4.166666666666667in" height="0.4782403762029746in"}
 
 #### 常用模块
 
 time
 
-> ![](media/i68dnlokxptcatl1l38m9.png){width="4.166666666666667in" height="0.358669072615923in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/61.jpg?raw=true){width="4.166666666666667in" height="0.358669072615923in"}
 
 time.time()，返回1970年1月1日到当前的秒数
 
@@ -794,7 +800,7 @@ sys
 
 sys.path，以列表返回python系统的环境变量
 
-> ![](media/9xn3lcobg4af9nyuvrfk3f.png){width="4.166666666666667in" height="0.38777340332458443in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/62.jpg?raw=true){width="4.166666666666667in" height="0.38777340332458443in"}
 
 os
 
@@ -820,11 +826,11 @@ os.path.dirname(**\_\_file\_\_**)，返回当前文件所在目录名称
 
 os.path.join(path1,path2)，将两个对象拼接成一个路径
 
-> ![](media/iqmk231zaires3fsm6f7.png){width="4.166666666666667in" height="1.6807261592300962in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/63.jpg?raw=true){width="4.166666666666667in" height="1.6807261592300962in"}
 
 例1:输入1个目录路径，统计出该目录下有多少个文件和目录
 
-> ![](media/ut698ea675b6k8pcpq0e6.png){width="4.166666666666667in" height="1.4678433945756781in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/64.jpg?raw=true){width="4.166666666666667in" height="1.4678433945756781in"}
 
 安装第三方模块
 
@@ -896,15 +902,15 @@ cell_values(row,col)，返回指定单元格的数据
 
 例
 
-> ![](media/ql65yg464kjaagi20ttsr.png){width="4.166666666666667in" height="2.912706692913386in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/65.jpg?raw=true){width="4.166666666666667in" height="2.912706692913386in"}
 >
-> ![](media/81yieg3h1axet5ocngbe0b.png){width="4.166666666666667in" height="0.9751771653543307in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/66.jpg?raw=true){width="4.166666666666667in" height="0.9751771653543307in"}
 >
-> ![](media/8z5ig6fslpxkbguyooe16g.png){width="4.166666666666667in" height="1.229942038495188in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/67.jpg?raw=true){width="4.166666666666667in" height="1.229942038495188in"}
 >
-> ![](media/2upww8a15ztpjyqz7kdo5l.png){width="4.166666666666667in" height="3.0560520559930007in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/68.jpg?raw=true){width="4.166666666666667in" height="3.0560520559930007in"}
 >
-> ![](media/kq2zt6i0tlzksqqzqs0u.png){width="4.166666666666667in" height="2.922001312335958in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/69.jpg?raw=true){width="4.166666666666667in" height="2.922001312335958in"}
 
 ### csv
 
@@ -916,7 +922,7 @@ cell_values(row,col)，返回指定单元格的数据
 
 读取文件内容（csv.reader()）
 
-> ![](media/jkuav60g67jcaqp6ywn2b.png){width="4.166666666666667in" height="1.3182436570428697in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/70.jpg?raw=true){width="4.166666666666667in" height="1.3182436570428697in"}
 
 ### 文本文件
 
@@ -940,7 +946,7 @@ encoding，指定编码，（如果打开文件提示编码错误，再加上enc
 
 例1
 
-> ![](media/3rd4tldjgo82ujfkghgv7.png){width="4.166666666666667in" height="2.39501312335958in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/71.jpg?raw=true){width="4.166666666666667in" height="2.39501312335958in"}
 
 常用方法
 
@@ -954,7 +960,7 @@ encoding，返回打开文件的编码
 
 例2
 
-> ![](media/9i6t29d9kwgydcs6s7gr3.png){width="4.166666666666667in" height="2.6608070866141733in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/72.jpg?raw=true){width="4.166666666666667in" height="2.6608070866141733in"}
 
 读文件
 
@@ -964,7 +970,7 @@ readline()，读取文件中的一行，保存在字符串中
 
 readlines（），将文件中所有内容读取出来，保存在列表中，文件中的每一行为列表中的一个元素
 
-> ![](media/ap505yfl3jl3qdvynsj04f.png){width="4.166666666666667in" height="2.424317585301837in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/73.jpg?raw=true){width="4.166666666666667in" height="2.424317585301837in"}
 
 写文件
 
@@ -972,17 +978,17 @@ write(s)，将一个字符串写入文件
 
 writelines(iter)，将一个可迭代对象的所有元素写入文件
 
-> ![](media/7zfbmh9vffe7y8k80uob1a.png){width="4.166666666666667in" height="1.8027963692038496in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/74.jpg?raw=true){width="4.166666666666667in" height="1.8027963692038496in"}
 
 例：
 
 有一个文件保存学生的成绩信息，计算出每个学生的总成绩
 
-> ![](media/qt40vp3iihknd2t7uz51l.png){width="4.166666666666667in" height="1.3387489063867017in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/75.jpg?raw=true){width="4.166666666666667in" height="1.3387489063867017in"}
 >
-> ![](media/2xtwjfor0u52tkssk36l28.png){width="4.166666666666667in" height="2.4358431758530186in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/76.jpg?raw=true){width="4.166666666666667in" height="2.4358431758530186in"}
 >
-> ![](media/ggv6wgrq7wcn85z00vn39.png){width="4.166666666666667in" height="0.8931813210848644in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/77.jpg?raw=true){width="4.166666666666667in" height="0.8931813210848644in"}
 
 ### with语句
 
@@ -990,13 +996,13 @@ writelines(iter)，将一个可迭代对象的所有元素写入文件
 
 语法:with open(file) as f:
 
-> ![](media/mm9sqdy27xqwm5q2tdgd3.png){width="4.166666666666667in" height="1.6508759842519685in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/78.jpg?raw=true){width="4.166666666666667in" height="1.6508759842519685in"}
 
 练习
 
 例1：一个目录users，users中使用文件保存用户信息（每个用户一个文件，文件名为账号），文件中包含三行内容，分别是密码、姓名、账号余额，格式如下：
 
-> ![](media/2sp89hinsei9ptbgzpd0rl.png){width="3.0208333333333335in" height="1.0520833333333333in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/79.jpg?raw=true){width="3.0208333333333335in" height="1.0520833333333333in"}
 
 例2：实现系统的登录、注册功能
 
@@ -1004,7 +1010,7 @@ writelines(iter)，将一个可迭代对象的所有元素写入文件
 
 语法：
 
-> ![](media/ju19wbefzbila12egl1cdp.png){width="3.0625in" height="4.163225065616798in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/80.jpg?raw=true){width="3.0625in" height="4.163225065616798in"}
 
 try
 
@@ -1016,35 +1022,35 @@ except
 
 except 异常，捕获1个指定异常
 
-> ![](media/p7xpadfadf4e90kcuxfc5.png){width="4.166666666666667in" height="2.7285181539807524in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/81.jpg?raw=true){width="4.166666666666667in" height="2.7285181539807524in"}
 
 except (异常1，异常2，\.....)，捕获元组中的异常
 
-> ![](media/r5lxon2olboa605wzt4sih.png){width="4.166666666666667in" height="2.828021653543307in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/82.jpg?raw=true){width="4.166666666666667in" height="2.828021653543307in"}
 
 except Exception，捕获所有的异常
 
-> ![](media/6sllhe7jr4szblmfqpaltm.png){width="4.166666666666667in" height="2.953678915135608in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/83.jpg?raw=true){width="4.166666666666667in" height="2.953678915135608in"}
 
 else
 
 如果try中的语句没有引发异常，则执行else后的代码
 
-> ![](media/xbh8xywwlrhs3gzm49rq6.png){width="4.166666666666667in" height="2.764896106736658in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/84.jpg?raw=true){width="4.166666666666667in" height="2.764896106736658in"}
 
 finally
 
 无论是否引发异常，finally的代码段都会执行
 
-> ![](media/looywvlb5ba5od0vpmdl6n.png){width="4.166666666666667in" height="2.8982360017497815in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/85.jpg?raw=true){width="4.166666666666667in" height="2.8982360017497815in"}
 
 raise
 
 主动抛出异常
 
-> ![](media/ggh1shgq1giohhn37gdg9n.png){width="4.166666666666667in" height="3.451123140857393in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/86.jpg?raw=true){width="4.166666666666667in" height="3.451123140857393in"}
 >
-> ![](media/cdvgg5lc0onoysrutrk2jo.png){width="4.166666666666667in" height="2.27in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/87.jpg?raw=true){width="4.166666666666667in" height="2.27in"}
 
 ## 数据库操作（重要）
 
@@ -1104,7 +1110,7 @@ cur.close()
 
 con.close()
 
-> ![](media/xks94clzj20cgzi48o7az7.png){width="4.166666666666667in" height="1.537671697287839in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/88.jpg?raw=true){width="4.166666666666667in" height="1.537671697287839in"}
 >
-> ![](media/jwm1d9cmfzqfk3ehcswhxn.png){width="4.166666666666667in" height="2.944983595800525in"}
+> ![](https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python/89.jpg?raw=true){width="4.166666666666667in" height="2.944983595800525in"}
 
