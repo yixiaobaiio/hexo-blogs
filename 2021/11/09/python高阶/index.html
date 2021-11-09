@@ -1,0 +1,1611 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="python高阶, 翼小白的博客">
+    <meta name="description" content="大学 | 程序猿">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>python高阶 | 翼小白的博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">翼小白的博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">翼小白的博客</div>
+        <div class="logo-desc">
+            
+            大学 | 程序猿
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">python高阶</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-11-09
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="python高阶"><a href="#python高阶" class="headerlink" title="python高阶"></a>python高阶</h1><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="类（class）"><a href="#类（class）" class="headerlink" title="类（class）"></a>类（class）</h4><p>描述具有相同属性和行为的对象的集合，如：学生类（学号，姓名，班级，学习）</p>
+<h4 id="对象（object）"><a href="#对象（object）" class="headerlink" title="对象（object）"></a>对象（object）</h4><p>通过类定义的数据结构的实例，是对类的具体实现</p>
+<h5 id="属性：描述类的静态特征"><a href="#属性：描述类的静态特征" class="headerlink" title="属性：描述类的静态特征"></a>属性：描述类的静态特征</h5><h5 id="类属性"><a href="#类属性" class="headerlink" title="类属性"></a>类属性</h5><p>每一个对象都具有，并且值相同，如：学生的国籍</p>
+<h5 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h5><p>每一个对象都具有，但值可能不同，如：学生姓名、年龄等</p>
+<p>方法：描述类的动态行为</p>
+<h5 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h5><p>通过装饰器@classmethod声明，通常通过类调用，一般用于修改类属性的值</p>
+<h5 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h5><p>类中最常用的方法，常通过对象调用</p>
+<h5 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h5><p>通过装饰器@staticmethod声明，常通过类调用，通常是一些和类本身无关的方法</p>
+<h5 id="类的声明"><a href="#类的声明" class="headerlink" title="类的声明"></a>类的声明</h5><p><strong>语法</strong></p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/1.jpg?raw=true">{width=”4.166666666666667in” height=”1.5074529746281715in”}</p>
+</blockquote>
+<p><strong>类名</strong>：符合标识符命名规范，通常每个单词首字母大写</p>
+<p>例1：声明一个学生类</p>
+<p><strong>属性</strong>：学号、姓名、年龄、国籍、班级</p>
+<p><strong>方法</strong>：学习、吃饭、睡觉</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/2.jpg?raw=true">{width=”4.166666666666667in” height=”2.3263353018372706in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/3.jpg?raw=true">{width=”4.166666666666667in” height=”3.659326334208224in”}</p>
+</blockquote>
+<h5 id="对象的声明（实例化）"><a href="#对象的声明（实例化）" class="headerlink" title="对象的声明（实例化）"></a>对象的声明（实例化）</h5><p>语法：对象名 = 类名([实参1，实参2，......])</p>
+<p>例1：实例化Student类</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/4.jpg?raw=true">{width=”4.166666666666667in” height=”2.542010061242345in”}</p>
+</blockquote>
+<h5 id="内置方法（重要）"><a href="#内置方法（重要）" class="headerlink" title="内置方法（重要）"></a>内置方法（重要）</h5><p>__new__()，new方法，在实例化是自动调用，用于创建对象</p>
+<p>__init__()，构造方法，初始化对象，在实例化时自动调用</p>
+<p>__del__()，析构方法，销毁对象，在对象生命周期结束时自动调用</p>
+<p>例1：顺序：创建---》构造----》销毁</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/5.jpg?raw=true">{width=”4.166666666666667in” height=”3.444122922134733in”}</p>
+</blockquote>
+<p>例2：</p>
+<p>声明一个学校类，学校类中声明一个类属性表示学校的总人数，声明一个类方法用于更新学校总人数</p>
+<p>声明一个学生类，包含学生的基本信息，每实例化一个学生，则学校的总人数+1</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/6.jpg?raw=true">{width=”4.166666666666667in” height=”2.4410772090988626in”}</p>
+</blockquote>
+<p>例3：</p>
+<p>声明一个学校类，学校类中声明4个类属性分别表示学校的总人数、高一、高二、高三年级的人数，声明一个类方法用于更新学校总人数以及对应年级的人数</p>
+<p>声明一个学生类，包含学生的基本信息，每实例化一个学生，则学校的总人数+1</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/7.jpg?raw=true">{width=”4.166666666666667in” height=”2.312234251968504in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/8.jpg?raw=true">{width=”4.166666666666667in” height=”1.6754461942257217in”}</p>
+</blockquote>
+<h5 id="对象组合"><a href="#对象组合" class="headerlink" title="对象组合"></a>对象组合</h5><p>用于描述类与类之间的关系，多个类之间存在依赖关系，需要在A类中调用B的属性或者方法</p>
+<p><strong>方式</strong></p>
+<p>1、在A类的实例方法中传入B类的对象，通过该对象调用B类中的属性和方法（A类、B类相互依赖）</p>
+<p>2、在A类的构造方法中传入B类的对象，通过该对象调用B类中的属性和方法（A类依赖于B类）</p>
+<p>例1：饲养员与动物</p>
+<p>有10个房间，每个房间中随机放入老虎或羊</p>
+<p>饲养员不知道每个房间中的动物类型，可以选择敲门（房间中的动物发出叫声，同时体重-5）获知动物类型。饲养员给动物喂食，喂正确则体重+10，错误则体重-10（老虎吃肉，羊吃草）</p>
+<p>游戏时间1分钟，统计每个房间中动物的体重</p>
+<p>分析：完成整个事件有哪些对象，这些对象具有哪些属性和方法，将对象的属性和方法抽象为类</p>
+<p>老虎</p>
+<p>属性：名字、体重</p>
+<p>方法：吃东西、发出叫声</p>
+<p>羊</p>
+<p>属性：名字、体重</p>
+<p>方法：吃东西、发出叫声</p>
+<p>房间</p>
+<p>属性：房间号、动物类型</p>
+<p>饲养员</p>
+<p>属性：姓名</p>
+<p>方法:敲门、喂食</p>
+<p>代码实现</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/9.jpg?raw=true">{width=”4.166666666666667in” height=”3.3277088801399826in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/10.jpg?raw=true">{width=”4.166666666666667in” height=”3.031418416447944in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/11.jpg?raw=true">{width=”4.166666666666667in” height=”2.1454385389326336in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/12.jpg?raw=true">{width=”4.166666666666667in” height=”2.448050087489064in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/13.jpg?raw=true">{width=”4.166666666666667in” height=”1.9184426946631672in”}</p>
+</blockquote>
+<h3 id="面向对象的三大特性"><a href="#面向对象的三大特性" class="headerlink" title="面向对象的三大特性"></a>面向对象的三大特性</h3><h4 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h4><p>私有化：在属性或者方法名前面加2条下划线，此时属性或方法就变为私有的，只能在当前类的内部访问，在类的外部无法直接访问私有属性或者方法</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/14.jpg?raw=true">{width=”4.166666666666667in” height=”1.700269028871391in”}</p>
+</blockquote>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><p>作用：提高代码重用性，降低代码冗余</p>
+<p>基本概念：</p>
+<p>子类：继承其它类的类</p>
+<p>可以有多个父类</p>
+<p>可以继承父类所有非私有的属性和方法</p>
+<p>父类：也叫基类、超类，被别的类来继承的类</p>
+<p>重写：子类继承父类的方法，在子类中重新实现该方法</p>
+<p>例1：</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/15.jpg?raw=true">{width=”4.166666666666667in” height=”3.9289107611548557in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/16.jpg?raw=true">{width=”4.166666666666667in” height=”1.063218503937008in”}</p>
+</blockquote>
+<p>例2：父类控制子类必须重写方法</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/17.jpg?raw=true">{width=”4.166666666666667in” height=”2.6574234470691165in”}</p>
+</blockquote>
+<p>例3：单例模式</p>
+<p>在程序运行期间保证类的实例只有1个</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/18.jpg?raw=true">{width=”4.166666666666667in” height=”2.1680686789151355in”}</p>
+</blockquote>
+<h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><p>作用：增加代码的灵活性、可扩展性</p>
+<p>例</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/19.jpg?raw=true">{width=”3.8541666666666665in” height=”4.165555555555556in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/20.jpg?raw=true">{width=”4.166666666666667in” height=”0.8117399387576553in”}</p>
+</blockquote>
+<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3><p>作用：提高代码的执行速度</p>
+<p>线程：进程内部进行CPU调度的基本单位，一个进程至少存在一个线程</p>
+<p>模块：threading</p>
+<p>创建线程：Thread(target=func[args=(value1,value2,......)])</p>
+<p>target，指定线程需要执行的任务（通常是函数名或者方法名，不要加括号）</p>
+<p>args，指定线程执行的任务需要传入的实参，以元组形式传入</p>
+<p>启动线程：start()</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/21.jpg?raw=true">{width=”4.166666666666667in” height=”3.2630522747156605in”}</p>
+</blockquote>
+<h5 id="线程守护"><a href="#线程守护" class="headerlink" title="线程守护"></a>线程守护</h5><p>作用：子线程跟随主线程结束而结束</p>
+<p>方法：setDaemon(True)，必须在线程启动前设置</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/22.jpg?raw=true">{width=”4.166666666666667in” height=”3.4368832020997377in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/23.jpg?raw=true">{width=”4.166666666666667in” height=”2.677891513560805in”}</p>
+</blockquote>
+<h5 id="线程阻塞"><a href="#线程阻塞" class="headerlink" title="线程阻塞"></a>线程阻塞</h5><p>作用：主线程在子线程结束之后再结束</p>
+<p>方法：join()，需要在线程启动后设置</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/24.jpg?raw=true">{width=”4.166666666666667in” height=”2.583507217847769in”}</p>
+</blockquote>
+<h5 id="线程锁"><a href="#线程锁" class="headerlink" title="线程锁"></a>线程锁</h5><p>作用：用于解决子线程共享全局变量时出现的数据冲突问题，从而确保数据的安全性和准确性</p>
+<p>缺点：降低程序运行效率</p>
+<p>使用步骤：</p>
+<p>导入模块：Lock</p>
+<p>1、创建锁：lock = Lock()</p>
+<p>2、在编辑全局变量之前获取锁，锁定全局变量只能由当前子线程编辑</p>
+<p>lock.acquire()</p>
+<p>3、编辑完成后，释放锁（一定记得释放）</p>
+<p>lock.release()</p>
+<p>未加锁</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/25.jpg?raw=true">{width=”4.166666666666667in” height=”4.002409230096238in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/26.jpg?raw=true">{width=”4.166666666666667in” height=”0.7414271653543307in”}</p>
+</blockquote>
+<p>添加锁</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/27.jpg?raw=true">{width=”4.166666666666667in” height=”3.855485564304462in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/28.jpg?raw=true">{width=”4.166666666666667in” height=”2.603734689413823in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/29.jpg?raw=true">{width=”4.166666666666667in” height=”3.663277559055118in”}</p>
+</blockquote>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p>作用：实现对字符串的复杂控制</p>
+<p>模块：re（系统模块）</p>
+<p>方法：</p>
+<p>split(pattern,string)，使用字符串中与pattern规则匹配的内容进行分隔，返回一个列表</p>
+<p>pattern，正则表达式</p>
+<p>string，待处理的字符串</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/30.jpg?raw=true">{width=”4.166666666666667in” height=”2.2630227471566053in”}</p>
+</blockquote>
+<p>sub(pattern,repl,string)，将字符串中与pattern规则匹配的内容进行替换（替换成repl），返回一个新字符串</p>
+<p>pattern，正则表达式</p>
+<p>string，待处理的字符串</p>
+<p>repl，新内容</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/31.jpg?raw=true">{width=”4.166666666666667in” height=”2.40252624671916in”}</p>
+</blockquote>
+<p>findall(pattern，string[，控制字符串])：以列表返回字符串中与pattern规则匹配的内容，如果没有匹配的则返回空列表</p>
+<p>pattern，正则表达式</p>
+<p>string，待处理的字符串</p>
+<h4 id="控制字符"><a href="#控制字符" class="headerlink" title="控制字符"></a>控制字符</h4><p>re.S，使用元字符.可以匹配包括换行符\n在内的所有字符</p>
+<p>re.I，忽略大小写</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/32.jpg?raw=true">{width=”4.166666666666667in” height=”2.2089687226596677in”}</p>
+</blockquote>
+<h4 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h4><p>\w，匹配一个单词字符（字母、数字、下划线）</p>
+<p>\W，匹配一个非单词字符</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/33.jpg?raw=true">{width=”4.166666666666667in” height=”2.92294072615923in”}</p>
+</blockquote>
+<p>\d，匹配一个数字字符</p>
+<p>\D，匹配一个非数字字符</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/34.jpg?raw=true">{width=”4.166666666666667in” height=”2.85534886264217in”}</p>
+</blockquote>
+<p>\s,匹配一个空白字符</p>
+<p>\S，匹配一个非空白字符</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/35.jpg?raw=true">{width=”4.166666666666667in” height=”2.90325021872266in”}</p>
+</blockquote>
+<p>**.**，匹配除换行符\n以外的任意一个字符</p>
+<p><strong>^</strong>，匹配字符串开头</p>
+<p>**$**，匹配字符串结尾</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/36.jpg?raw=true">{width=”4.166666666666667in” height=”2.8333333333333335in”}</p>
+</blockquote>
+<p>*,匹配前一个字符任意次</p>
+<p>ab*--a、ab、abb、abbb</p>
+<p>+，匹配前一个字符至少1次</p>
+<p>？，匹配前一个字符0次或1次</p>
+<p>{n}，匹配前一个字符n次</p>
+<p>{n，}，匹配前一个字符至少n次</p>
+<p>{n,m}，匹配前一个字符至少n次，最多m次</p>
+<p>{，m}，匹配前一个字符最多m次</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/37.jpg?raw=true">{width=”4.041666666666667in” height=”4.158301618547681in”}</p>
+</blockquote>
+<h3 id="网络编程-TCP-IP简介"><a href="#网络编程-TCP-IP简介" class="headerlink" title="网络编程-TCP/IP简介"></a>网络编程-TCP/IP简介</h3><p>OSI模型</p>
+<p>TCP/IP模型（当今互联网网络模型）</p>
+<p>应用层：HTTP、HTTPS、FTP（文件传输协议）、SMTP、IMAP、POP3</p>
+<p>HTTP协议请求方法（最常用）：GET、POST</p>
+<p>传输层：TCP、UDP</p>
+<p>UDP，用户数据报协议，提供无连接、不可靠的通信服务（效率高、消耗少）</p>
+<p>TCP，传输控制协议，提供面向连接、可靠的通信服务（安全性、可靠性高）</p>
+<p>三次握手</p>
+<p>建立连接</p>
+<p>四次挥手</p>
+<p>断开连接</p>
+<p>socket编程</p>
+<p>套接字，工作在传输层和应用层之间，通过TCP或UDP协议传输信息，分为客户端和服务端</p>
+<p>模块，socket</p>
+<p>使用步骤</p>
+<p>服务端</p>
+<p>1、创建socket对象：soc = socket.socket()</p>
+<p>2、绑定IP端口：soc.bind(ip,port)</p>
+<p>3、设置监听：soc.listen()</p>
+<p>4、等待客户端连接：soc.accept()</p>
+<p>客户端</p>
+<p>1、创建socket对象：soc = socket.socket()</p>
+<p>2、连接服务器：soc.connect(ip,port)</p>
+<p>公共方法：</p>
+<p>send()，发送消息</p>
+<p>recv()，接收消息</p>
+<p>例：</p>
+<p>服务端</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/38.jpg?raw=true">{width=”4.166666666666667in” height=”2.345429790026247in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/39.jpg?raw=true">{width=”4.166666666666667in” height=”2.0285454943132106in”}</p>
+</blockquote>
+<p>客户端</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/40.jpg?raw=true">{width=”4.166666666666667in” height=”2.0153827646544182in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/41.jpg?raw=true">{width=”4.166666666666667in” height=”0.9444444444444444in”}</p>
+</blockquote>
+<p>request</p>
+<p>作用：模拟客户端向服务端发送http或https请求</p>
+<p>模块：requests</p>
+<p>pip install requests</p>
+<p>GET请求：</p>
+<p>get(url[,params,headers,file])</p>
+<p>url，请求地址</p>
+<p>params，请求参数，一般使用字典传入</p>
+<p>headers，请求头</p>
+<p>file，一般用于上传文件</p>
+<p>例1：获取豆瓣电影排行榜</p>
+<p>1、抓包，获取请求地址、参数、请求头</p>
+<p>2、使用代码模拟客户端发送请求，获取页面源码</p>
+<p>3、使用正则表达式从页面源码中获取排行榜中的电影信息</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/42.jpg?raw=true">{width=”4.166666666666667in” height=”1.580155293088364in”}</p>
+</blockquote>
+<p>例2：下载网页图片</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/43.jpg?raw=true">{width=”4.166666666666667in” height=”1.7040343394575679in”}</p>
+</blockquote>
+<h2 id="高阶应用"><a href="#高阶应用" class="headerlink" title="高阶应用"></a>高阶应用</h2><h3 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h3><h4 id="闭包函数"><a href="#闭包函数" class="headerlink" title="闭包函数"></a>闭包函数</h4><p>定义：外函数中声明了一个内函数，在内函数中引用了外函数的变量，外函数返回内函数的引用</p>
+<p>例1：</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/44.jpg?raw=true">{width=”4.166666666666667in” height=”2.2631135170603676in”}</p>
+</blockquote>
+<p>例2：</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/45.jpg?raw=true">{width=”4.166666666666667in” height=”2.555858486439195in”}</p>
+</blockquote>
+<p>例3：内函数中修改外函数变量</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/46.jpg?raw=true">{width=”4.166666666666667in” height=”2.270722878390201in”}</p>
+</blockquote>
+<h3 id="装饰器-1"><a href="#装饰器-1" class="headerlink" title="装饰器"></a>装饰器</h3><p>在不改变函数的源码、调用方式的前提下，为函数添加新的功能</p>
+<p>通用装饰器模板：</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/47.jpg?raw=true">{width=”4.166666666666667in” height=”1.5924956255468066in”}</p>
+</blockquote>
+<p>例1：统计函数的运行时间</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/48.jpg?raw=true">{width=”4.166666666666667in” height=”2.5290365266841643in”}</p>
+</blockquote>
+<p>例2:执行顺序</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/49.jpg?raw=true">{width=”4.166666666666667in” height=”2.483672353455818in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/50.jpg?raw=true">{width=”4.166666666666667in” height=”1.2755107174103237in”}</p>
+</blockquote>
+<p>例3：为装饰器传参（三层的装饰器能够实现为装饰器传参）</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/51.jpg?raw=true">{width=”4.166666666666667in” height=”2.5325699912510937in”}</p>
+</blockquote>
+<h2 id="pytest框架"><a href="#pytest框架" class="headerlink" title="pytest框架"></a>pytest框架</h2><p>模块：pytest</p>
+<p>pip insatll pytest</p>
+<h3 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h3><p>说明：</p>
+<p>函数名需要以test开头</p>
+<p>类名需要以Test开头，类中的方法需要以test开头</p>
+<p>类中不能有构造方法（初始化对象）</p>
+<p>使用assert进行断言</p>
+<p>脚本名需要以test开头</p>
+<h4 id="作用于函数"><a href="#作用于函数" class="headerlink" title="作用于函数"></a>作用于函数</h4><blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/52.jpg?raw=true">{width=”4.166666666666667in” height=”1.6981506999125109in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/53.jpg?raw=true">{width=”4.166666666666667in” height=”1.8821839457567804in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/54.jpg?raw=true">{width=”4.166666666666667in” height=”0.8638637357830271in”}</p>
+</blockquote>
+<h4 id="作用于类"><a href="#作用于类" class="headerlink" title="作用于类"></a>作用于类</h4><blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/55.jpg?raw=true">{width=”4.166666666666667in” height=”1.7446237970253717in”}</p>
+</blockquote>
+<h5 id="用例执行"><a href="#用例执行" class="headerlink" title="用例执行"></a>用例执行</h5><p>方式</p>
+<p>脚本：pytest.main([参数1，参数2，......])</p>
+<p>命令行</p>
+<p>pytest 参数 脚本</p>
+<p>py.test 参数 脚本</p>
+<p>python -m pytest 参数 脚本</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/56.jpg?raw=true">{width=”4.166666666666667in” height=”1.8027449693788276in”}</p>
+</blockquote>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><p>-s</p>
+<p>-v</p>
+<p>-q</p>
+<p>-k，通过关键字匹配脚本、函数名、类名、方法名</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/57.jpg?raw=true">{width=”4.166666666666667in” height=”2.1729385389326334in”}</p>
+</blockquote>
+<p>-x，如果测试执行过程中有fail的用例，则测试立即停止</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/58.jpg?raw=true">{width=”4.166666666666667in” height=”2.1729385389326334in”}</p>
+</blockquote>
+<p>--maxfail=n，当失败用例达到n条则停止测试</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/59.jpg?raw=true">{width=”4.166666666666667in” height=”2.1729385389326334in”}</p>
+</blockquote>
+<p>-m，对用例进行标记，执行指定的用例</p>
+<p>1、在项目根目录下新建文件pytest.ini</p>
+<p>2、在pytest.ini文件中添加标记</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/60.jpg?raw=true">{width=”4.166666666666667in” height=”2.8889971566054244in”}</p>
+</blockquote>
+<p>3、使用装饰器标记测试用例@pytest.mark.标记</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/61.jpg?raw=true">{width=”4.166666666666667in” height=”1.855275590551181in”}</p>
+</blockquote>
+<p>4、执行测试时使用-m 标记即可执行指定的用例</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/62.jpg?raw=true">{width=”4.166666666666667in” height=”1.7165102799650043in”}</p>
+</blockquote>
+<h5 id="跳过用例"><a href="#跳过用例" class="headerlink" title="跳过用例"></a>跳过用例</h5><p>@pytest .mark.skip(reason=xxxx)，无条件跳过指定用例</p>
+<p>@pytest mark.skipif(条件，reason=xxxx)，有条件跳过指定用例</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/63.jpg?raw=true">{width=”4.166666666666667in” height=”2.893416447944007in”}</p>
+</blockquote>
+<h5 id="参数化"><a href="#参数化" class="headerlink" title="参数化"></a>参数化</h5><p>@pytest .mark.parametrize(&#39;参数1，参数2，......&#39;，值)</p>
+<p>参数，与被装饰的函数的形参相同</p>
+<p>值，传递给参数的数据，通常为一个列表，如果需要给多个参数传数据可以将这些数据封包到元组中</p>
+<p>例1：一个参数情况</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/64.jpg?raw=true">{width=”4.166666666666667in” height=”1.4433300524934383in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/65.jpg?raw=true">{width=”4.166666666666667in” height=”1.9778094925634295in”}</p>
+</blockquote>
+<p>例2：多个参数（每条用例的数据封包到元组中）</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/66.jpg?raw=true">{width=”4.166666666666667in” height=”1.4064020122484688in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/67.jpg?raw=true">{width=”4.166666666666667in” height=”1.5560269028871392in”}</p>
+</blockquote>
+<p>例3：登录测试用例</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/68.jpg?raw=true">{width=”4.166666666666667in” height=”2.147295494313211in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/69.jpg?raw=true">{width=”4.166666666666667in” height=”1.432571084864392in”}</p>
+</blockquote>
+<h5 id="前置后置"><a href="#前置后置" class="headerlink" title="前置后置"></a>前置后置</h5><p>模块级，作用范围为当前模块，模块中的所有用例执行前后分别执行1次前置和后置</p>
+<p>setup_module()，前置，所有用例执行前运行1次</p>
+<p>teardown_module()，后置，所有用例执行后执行1次</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/70.jpg?raw=true">{width=”4.166666666666667in” height=”3.3808234908136483in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/71.jpg?raw=true">{width=”4.166666666666667in” height=”2.718675634295713in”}</p>
+</blockquote>
+<p>函数级，作用范围为当前模块中的每一个测试函数，模块中的每条用例执行前后分别运行1次前置和后置</p>
+<p>setup_function()，前置，每条用例执行前运行1次</p>
+<p>teardown_function()，后置，每条用例执行后运行1次</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/72.jpg?raw=true">{width=”4.166666666666667in” height=”3.1950885826771653in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/73.jpg?raw=true">{width=”4.166666666666667in” height=”3.486307961504812in”}</p>
+</blockquote>
+<p>类级，作用范围为当前类，类中的所有用例执行前后分别运行1次前置和后置</p>
+<p>setup_class()，前置，所有用例执行前运行1次</p>
+<p>teardown_class()，后置，所有用例执行后运行1次</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/74.jpg?raw=true">{width=”4.166666666666667in” height=”2.65544072615923in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/75.jpg?raw=true">{width=”4.166666666666667in” height=”2.337912292213473in”}</p>
+</blockquote>
+<p>方法级，作用范围为当前类中的每一个测试方法，每条用例执行前后分别运行1次前置和后置</p>
+<p>setup_method()或者setup()，前置，每条用例执行前运行1次</p>
+<p>teardown_method()或者teardown()，后置，每条用例执行后运行1次</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/76.jpg?raw=true">{width=”4.166666666666667in” height=”3.407755905511811in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/77.jpg?raw=true">{width=”4.166666666666667in” height=”2.5226760717410324in”}</p>
+</blockquote>
+<p>用例：新增会员</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/78.jpg?raw=true">{width=”4.166666666666667in” height=”2.254727690288714in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/79.jpg?raw=true">{width=”4.166666666666667in” height=”1.4150393700787403in”}</p>
+</blockquote>
+<h5 id="fixture"><a href="#fixture" class="headerlink" title="fixture"></a>fixture</h5><p>创建：@pytest .fixture([name,scope,params,autouse])</p>
+<p>name，用于指定fixture名称，如果不指定默认为被装饰的函数名</p>
+<p>scope，指定固件fixture作用范围，module,class,function(默认),session,package</p>
+<p>params，参数</p>
+<p>autouse,设置为True，实现自动调用fixture</p>
+<p>例1：局部fixture</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/80.jpg?raw=true">{width=”4.166666666666667in” height=”2.110239501312336in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/81.jpg?raw=true">{width=”4.166666666666667in” height=”2.270722878390201in”}</p>
+</blockquote>
+<p>通过yield实现后置</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/82.jpg?raw=true">{width=”4.166666666666667in” height=”2.802257217847769in”}</p>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/83.jpg?raw=true">{width=”4.166666666666667in” height=”1.7833891076115485in”}</p>
+</blockquote>
+<h5 id="全局fixture"><a href="#全局fixture" class="headerlink" title="全局fixture"></a>全局fixture</h5><p>1、在项目下创建conftest.py文件，在该文件中实现fixture</p>
+<p>可在所有的脚本中使用该fixture（yeild返回一个值）</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/84.jpg?raw=true">{width=”4.166666666666667in” height=”1.8820220909886265in”}</p>
+</blockquote>
+<p>2、调用</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/85.jpg?raw=true">{width=”4.166666666666667in” height=”1.6881255468066492in”}</p>
+</blockquote>
+<p>执行结果</p>
+<blockquote>
+<p><img src="https://github.com/yixiaobaiio/hexo-blogs/blob/master/source/img/python2/86.jpg?raw=true">{width=”4.166666666666667in” height=”1.9246030183727034in”}</p>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">yixiaobai</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://yixiaobaiio.github.io/2021/11/09/python%E9%AB%98%E9%98%B6/">https://yixiaobaiio.github.io/2021/11/09/python%E9%AB%98%E9%98%B6/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">yixiaobai</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/11/09/python%E9%AB%98%E9%98%B6/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg" class="responsive-img" alt="python高阶">
+                        
+                        <span class="card-title">python高阶</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yixiaobai
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/11/08/Python%E5%9F%BA%E7%A1%80/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/longbig/hexo-blogs/master/source/img/01.jpeg" class="responsive-img" alt="python入门">
+                        
+                        <span class="card-title">python入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yixiaobai
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="81257463"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">yixiaobai</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/yixiaobaiio" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:yixiaobai123@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1546082227" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1546082227" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
